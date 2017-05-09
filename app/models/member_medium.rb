@@ -1,0 +1,2 @@
+class MemberMedium < ApplicationRecord
+end

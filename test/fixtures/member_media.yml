@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Member_Media_ID: 1
+  Media: 1
+  current_season: 
+  current_episode: 1
+  Done: false
+
+two:
+  Member_Media_ID: 1
+  Media: 1
+  current_season: 
+  current_episode: 1
+  Done: false
