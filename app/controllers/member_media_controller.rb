@@ -1,0 +1,2 @@
+class MemberMediaController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class MemberMedia < ApplicationRecord
+end

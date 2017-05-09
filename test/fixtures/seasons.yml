@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Title_Media: MyString
+  Season_Number: 1
+  Date: 2017-05-09 15:53:13
+  Episode: 1
+
+two:
+  Title_Media: MyString
+  Season_Number: 1
+  Date: 2017-05-09 15:53:13
+  Episode: 1

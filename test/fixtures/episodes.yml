@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Episode_ID: 1
+  Season_Number: 1
+  Title_Episode: MyString
+  Episode_Number: 1
+  Date: 2017-05-09 15:55:12
+  Description: MyString
+
+two:
+  Episode_ID: 1
+  Season_Number: 1
+  Title_Episode: MyString
+  Episode_Number: 1
+  Date: 2017-05-09 15:55:12
+  Description: MyString

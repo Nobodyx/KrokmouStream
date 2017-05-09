@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170509130553) do
+ActiveRecord::Schema.define(version: 20170509135512) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,47 @@ ActiveRecord::Schema.define(version: 20170509130553) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent", using: :btree
+  end
+
+  create_table "episodes", force: :cascade do |t|
+    t.integer  "Episode_ID"
+    t.integer  "Season_Number"
+    t.string   "Title_Episode"
+    t.integer  "Episode_Number"
+    t.datetime "Date"
+    t.string   "Description"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "media", force: :cascade do |t|
+    t.integer  "Media_ID"
+    t.string   "Title"
+    t.string   "Type"
+    t.string   "Style"
+    t.integer  "Season"
+    t.string   "Director"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "member_media", force: :cascade do |t|
+    t.integer  "Member_Media_ID"
+    t.integer  "Media"
+    t.integer  "current_season"
+    t.integer  "current_episode"
+    t.boolean  "Done"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "seasons", force: :cascade do |t|
+    t.string   "Title_Media"
+    t.integer  "Season_Number"
+    t.datetime "Date"
+    t.integer  "Episode"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: :cascade do |t|
