@@ -1,0 +1,9 @@
+<h1>Toutes nos séries</h1>
+
+<%- @media.each do |medium| -%>
+  <section>
+    <h2><%= medium.Title %></h2>
+    #<p><%= restaurant.city %></p>
+    #<%= cl_image_tag(restaurant.photo.path) %>
+  </section>
+<% end %>
