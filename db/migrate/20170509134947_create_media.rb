@@ -7,6 +7,7 @@ class CreateMedia < ActiveRecord::Migration[5.0]
       t.string :Style
       t.integer :Season
       t.string :Director
+      t.string :description
 
       t.timestamps
     end

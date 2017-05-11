@@ -1,8 +1,8 @@
 <h1 class="text-center">KrokmouStream</h1>
 <div class="container encadrement-media">
     <%- @media.each do |medium| -%>   
-        <div class="col-sm-6 col-md-3 encadrement-medium">
-            <%= cl_image_tag(medium.photo.path, class: "picture") %>
+        <div class="col-sm-6 col-md-3 encadrement-medium">            
+            <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), medium_path(medium)) %>
         </div>
     <% end %>
 </div>

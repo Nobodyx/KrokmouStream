@@ -1,0 +1,18 @@
+<div class="media">
+  <h1><%= @medium.Title %></h1>
+
+  <%= render partial: "media/button_index" %>
+
+  <section class="row medium">
+    <div class="col-sm-4">
+      <%= cl_image_tag(@medium.photo.path,crop: :fill, class: "picture_fullscreen") %>
+    </div>
+    <div class="col-sm-8">
+      <p>Type: <%= @medium.Type %></p>
+        <p>Style: <%= @medium.Style %></p>
+        <p>Nombre de saison: <%= @medium.Season %></p>
+        <p>Créateur: <%= @medium.Director %></p>
+        <p>Synopsis: <%=@medium.description%></p>
+    </div>
+  </section>
+</div>

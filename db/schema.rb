@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20170509135512) do
   end
 
   create_table "episodes", force: :cascade do |t|
+    t.integer  "season_id"
     t.integer  "Episode_ID"
     t.integer  "Season_Number"
     t.string   "Title_Episode"
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 20170509135512) do
     t.string   "Description"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.index ["season_id"], name: "index_episodes_on_season_id", using: :btree
   end
 
   create_table "media", force: :cascade do |t|
@@ -48,11 +50,13 @@ ActiveRecord::Schema.define(version: 20170509135512) do
     t.string   "Style"
     t.integer  "Season"
     t.string   "Director"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "member_media", force: :cascade do |t|
+    t.integer  "user_id"
     t.integer  "Member_Media_ID"
     t.integer  "Media"
     t.integer  "current_season"
@@ -60,15 +64,18 @@ ActiveRecord::Schema.define(version: 20170509135512) do
     t.boolean  "Done"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.index ["user_id"], name: "index_member_media_on_user_id", using: :btree
   end
 
   create_table "seasons", force: :cascade do |t|
+    t.integer  "medium_id"
     t.string   "Title_Media"
     t.integer  "Season_Number"
     t.datetime "Date"
     t.integer  "Episode"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.index ["medium_id"], name: "index_seasons_on_medium_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -84,6 +91,7 @@ ActiveRecord::Schema.define(version: 20170509135512) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "member_media"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
