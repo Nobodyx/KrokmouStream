@@ -1,10 +1,14 @@
-﻿<h1>Toutes nos séries</h1>
+<h1>KrokmouStream</h1>
 
 <%- @media.each do |medium| -%>
-  <section>
-    <h2><%= medium.Title %></h2>
-    <p><%= medium.Type %></p>
-    <p><%= medium.Style %></p>
-		<p><%= medium.Director %></p>
+  <section class="container">
+      <div class="col-md-12">
+        <h2><%= medium.Title %></h2>
+        <p><%= medium.Type %></p>
+        <p><%= medium.Style %></p>
+		<p><%= medium.Director %></p>        
+      </div>
+    
   </section>
 <% end %>
+
