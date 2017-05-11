@@ -1,17 +1,8 @@
-<h1>KrokmouStream</h1>
-
-<%- @media.each do |medium| -%>
-  <section class="container">
-      <div class="col-md-12">
-        <h2><%= medium.Title %></h2>
-        <p><%= medium.Type %></p>
-        <p><%= medium.Style %></p>
-		<p><%= medium.Director %></p>
-      </div>
-      
-      <div>
-          <%= cl_image_tag(medium.photo.path) %>
-      </div>
-    
-  </section>
-<% end %>
+<h1 class="text-center">KrokmouStream</h1>
+<div class="container encadrement-media">
+    <%- @media.each do |medium| -%>   
+        <div class="col-sm-6 col-md-3 encadrement-medium">
+            <%= cl_image_tag(medium.photo.path, class: "picture") %>
+        </div>
+    <% end %>
+</div>
