@@ -8,9 +8,14 @@
 
 Medium.destroy_all
 
+def open_photo(name)
+  File.open(Rails.root.join("db", "images", name))
+end
+
 m1 = Medium.create!(Media_ID: 1,
 Title: "Brice de nice",
 Type: "FILM",
 Style: "Comédie",
 Season: 0,
-Director: "James Huth")
+Director: "James Huth",
+photo: open_photo("BriceDeNice.jpg"))
