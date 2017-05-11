@@ -14,9 +14,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
-          <li><a href="#">Bienvenue, <%= current_user.username %></a></li>
+          <li><a href="#">Bienvenue, <%= current_user.email %></a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            <a href="#" class="dropdown-toggle glyphicon glyphicon-option-vertical" data-toggle="dropdown" role="button"
               aria-haspopup="true" aria-expanded="false">
             </a>
             <ul class="dropdown-menu">
