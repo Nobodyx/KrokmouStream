@@ -1,8 +1,6 @@
+<%= render partial: "media/button_index" %>
 <div class="media">
   <h1><%= @medium.Title %></h1>
-
-  <%= render partial: "media/button_index" %>
-
   <section class="row medium">
     <div class="col-sm-4">
       <%= cl_image_tag(@medium.photo.path,crop: :fill, class: "picture_fullscreen") %>
