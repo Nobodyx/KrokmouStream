@@ -59,3 +59,41 @@ Season: 5,
 Director: "Eiichiro Oda",
 description: "Dans sa quête du One Piece, l’équipage au Chapeau de Paille arrive sur Grantesoro, capitale mondiale du divertissement, où les hommes fortunés viennent jouer au casino et assister aux spectacles les plus grandioses. Grantesoro est un sanctuaire imprenable contrôlé par l’Empereur de l’Or, Gild Tesoro. Même la Marine ne peut y intervenir. Mais Luffy et ses compagnons vont vite découvrir l’effrayante face cachée de cette ville et devront risquer leurs vies pour tenter de s’en échapper. ",
 photo: open_photo("onepiece.jpg"))
+
+m6 = Medium.create!(Media_ID: 6,
+Title: "Chuck",
+Type: "SERIE",
+Style: "Comédie, Espionnage, Action",
+Season: 5,
+Director: "Josh Schwartz",
+description: "Employé dans une boutique de matériel informatique, Chuck Bartowski est propulsé du jour au lendemain dans le monde de l'espionnage, sa vie ennuyeuse laissant la place aux émotions fortes. Son cerveau renfermant, bien malgré lui, une base de données contenant des secrets gouvernementaux, la NSA et la CIA, soucieuses de protéger ces informations, envoient les agents John Casey et Sarah Walker pour veiller sur sa sécurité. Les informations qu'il détient nécessitent sa participation à de périlleuses missions, le confrontant à de multiples dangers. Tout ça sous le nez de son meilleur ami, Morgan, de sa soeur, Ellie, et de ses collègues de travail, qui ne se doutent de rien... ",
+photo: open_photo("chuck.jpg"))
+
+m7 = Medium.create!(Media_ID: 7,
+Title: "Game of Thrones",
+Type: "SERIE",
+Style: "Drame, Fantastique",
+Season: 8,
+Director: "David Benioff",
+description: "Il y a très longtemps, à une époque oubliée, une force a détruit l'équilibre des saisons. Dans un pays où l'été peut durer plusieurs années et l'hiver toute une vie, des forces sinistres et surnaturelles se pressent aux portes du Royaume des Sept Couronnes. La confrérie de la Garde de Nuit, protégeant le Royaume de toute créature pouvant provenir d'au-delà du Mur protecteur, n'a plus les ressources nécessaires pour assurer la sécurité de tous. Après un été de dix années, un hiver rigoureux s'abat sur le Royaume avec la promesse d'un avenir des plus sombres. Pendant ce temps, complots et rivalités se jouent sur le continent pour s'emparer du Trône de Fer, le symbole du pouvoir absolu.",
+photo: open_photo("GOT.jpg"))
+
+m8 = Medium.create!(Media_ID: 8,
+Title: "Grey's Anatomy",
+Type: "SERIE",
+Style: "Drame, Médical",
+Season: 15,
+Director: "Shonda Rhimes",
+description: "Meredith Grey, fille d'un chirurgien très réputé, commence son internat de première année en médecine chirurgicale dans un hôpital de Seattle. La jeune femme s'efforce de maintenir de bonnes relations avec ses camarades internes, mais dans ce métier difficile la compétition fait rage...",
+photo: open_photo("greyanatomy.jpg"))
+
+m9 = Medium.create!(Media_ID: 9,
+Title: "Source Code",
+Type: "FILM",
+Style: " Science fiction, Action, Thriller",
+Season: 0,
+Director: "Duncan Jones",
+description: "Colter Stevens se réveille en sursaut dans un train à destination de Chicago. Amnésique, il n’a aucun souvenir d’être monté dedans. Pire encore, les passagers du train se comportent avec lui avec familiarité alors qu’il ne les a jamais vus. Désorienté, il cherche à comprendre ce qui se passe mais une bombe explose tuant tout le monde à bord.
+Colter se réveille alors dans un caisson étrange et découvre qu’il participe à un procédé expérimental permettant de se projeter dans le corps d’une personne et de revivre les 8 dernières minutes de sa vie. Sa mission : revivre sans cesse les quelques minutes précédant l’explosion afin d’identifier et d’arrêter les auteurs de l’attentat. A chaque échec, les chances de pouvoir revenir dans le passé s’amenuisent.
+Alors qu’il essaie d’empêcher l’explosion, ses supérieurs lui apprennent qu’un deuxième attentat est en préparation en plein cœur de Chicago et qu’il ne s’agit plus de protéger les quelques passagers du train mais la ville toute entière. La course contre la montre commence… ",
+photo: open_photo("sourcecode.jpg"))
