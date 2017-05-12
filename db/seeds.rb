@@ -6,12 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Suppression des media existants
 Medium.destroy_all
 
 def open_photo(name)
   File.open(Rails.root.join("db", "images", name))
 end
 
+# Création de media en attente de l'exportation du csv
 m1 = Medium.create!(Media_ID: 1,
 Title: "Brice de nice",
 Type: "FILM",
