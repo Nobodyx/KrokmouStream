@@ -15,28 +15,27 @@
   </div>
 </div>
 
-<div id="Seasons">    
+<ul id="Seasons" class="container">
     <% seasons = Season.all %>
     <%- seasons.each do |season| -%>
         <% if season.Title_Media == @medium.Title %>
-            <div class="col-sm-12 text-center Season">
-                <h2>Saison <%= season.Season_Number %></h2>
-                <p>Date de Sortie: <%= season.Date %></p>
-                <p>Nombre d'épisode: <%= season.Episode %></p>
-                <div class="Episodes text-left col-md-12">
-                    <% episodes = Episode.all %>
-                    <%- episodes.each do |episode| -%>
-                        <% if episode.Season_Number == season.Season_Number %>
-                            <div class="col-md-4">
-                                <h3>Episode <%= episode.Episode_Number%></h3>
-                                <h4><%= episode.Title_Episode %></h4>
-                                <p>Sortie le : <%= episode.Date%></p>
-                                <p>Description : <%= episode.Description %></p>  
-                            </div>
-                        <% end %>                
+          <div class="col-sm-12 text-center Season">
+            Saison <%= season.Season_Number %>
+            <p>Date de Sortie: <%= season.Date %></p>
+            <p>Nombre d'épisode: <%= season.Episode %></p>
+            <ul class="Episodes text-left col-md-12">
+                <% episodes = Episode.all %>
+                <%- episodes.each do |episode| -%>
+                    <% if episode.Season_Number == season.Season_Number %>
+                      <div class="Episode col-md-2">
+                        <h3>Episode <%= episode.Episode_Number%></h3>
+                        <h4><%= episode.Title_Episode %></h4>
+                        <p>Sortie le : <%= episode.Date%></p>                
+                      </div>
                     <% end %>
-                </div>
-            </div>
+                <% end %>
+            </ul>
+          </div>
         <% end %>
-    <% end %>    
-</div>
+    <% end %>
+</ul>

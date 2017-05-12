@@ -63,6 +63,7 @@ body{
     border-radius: 10px;    
     background-color: dimgray;
     color: white;
+    margin-bottom: 10px;
 }
 
 .media h1{
@@ -79,6 +80,28 @@ body{
     color:black;
 }
 
+.Episode{
+    background-color: royalblue;
+    justify-content: space-around;
+    font-size: 14px;
+    color:black;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
 .Season{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.pointer{
     cursor: pointer;
+}
+
+.container{
+    padding-left: 0;
+    padding-right: 0;
 }

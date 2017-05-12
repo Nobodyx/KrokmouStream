@@ -23,7 +23,15 @@
 
 $(document).ready(function(){
     $('#Seasons').hide();
-    $('.Episodes').hide();
+    
+    $( "#info_season" ).hover(
+      function() {
+        $( this ).css("color","white");
+      }, function() {
+        $( this ).css("color","black");
+      }
+    );
+
     $('#info_season').click(function(){
         if(!$('#Seasons').is(":visible")){
             $('#Seasons').fadeIn('medium');
@@ -32,12 +40,12 @@ $(document).ready(function(){
             $('#Seasons').fadeOut('medium');
         }
     });
-    $('.Season').click(function(){
-        if(!$('.Episodes').is(":visible")){
-            $('.Episodes').fadeIn('medium');
-        }
-        else{
-            $('.Episodes').fadeOut('medium');
-        }
-    });
+    
+    function handler( event ) {
+      var target = $( event.target );
+      if ( target.is( "div" ) ) {
+        target.children().toggle();
+      }
+    }
+    $( "ul" ).click( handler ).find( "ul" ).hide();
 });
