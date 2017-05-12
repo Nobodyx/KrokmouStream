@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+KrokmouStream est une application Rails permettant le suivi de séries télévisées, inspiré de BetaSeries
 
-Things you may want to cover:
+Le projet est mené par une équipe de développeur d'Ingésup B3 au sein d'Ynov Campus Aix
 
-* Ruby version
+L'application permet les User Stories suivantes :
 
-* System dependencies
+- L'inscription et la connexion
+- L'ajout de série à son espace perso et la mémorisation des épisodes visionnés
+- La consultation de la liste des séries et dates des prochains épisodes
 
-* Configuration
+User story bonus :
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Mise en place d'une API
