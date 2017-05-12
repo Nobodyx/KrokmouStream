@@ -20,3 +20,24 @@
 //= require attachinary
 //= require_tree .
 //= require bootstrap-sprockets
+
+$(document).ready(function(){
+    $('#Seasons').hide();
+    $('.Episodes').hide();
+    $('#info_season').click(function(){
+        if(!$('#Seasons').is(":visible")){
+            $('#Seasons').fadeIn('medium');
+        }
+        else{
+            $('#Seasons').fadeOut('medium');
+        }
+    });
+    $('.Season').click(function(){
+        if(!$('.Episodes').is(":visible")){
+            $('.Episodes').fadeIn('medium');
+        }
+        else{
+            $('.Episodes').fadeOut('medium');
+        }
+    });
+});

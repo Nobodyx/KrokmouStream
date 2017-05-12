@@ -98,25 +98,25 @@ Colter se réveille alors dans un caisson étrange et découvre qu’il particip
 Alors qu’il essaie d’empêcher l’explosion, ses supérieurs lui apprennent qu’un deuxième attentat est en préparation en plein cœur de Chicago et qu’il ne s’agit plus de protéger les quelques passagers du train mais la ville toute entière. La course contre la montre commence… ",
 photo: open_photo("sourcecode.jpg"))
 
-s6_1 = Season.create!(medium_id: m6,
+s6_1 = Season.create!(medium_id: m6.Media_ID,
     Title_Media: m6.Title,
     Season_Number: 1,
     Date: DateTime.new(2005,2,3),
     Episode: 5)
 
-s6_2 = Season.create!(medium_id: m6,
+s6_2 = Season.create!(medium_id: m6.Media_ID,
     Title_Media: m6.Title,
-    Season_Number: 1,
+    Season_Number: 2,
     Date: DateTime.new(2007,4,7),
     Episode: 4)
 
-s6_3 = Season.create!(medium_id: m6,
+s6_3 = Season.create!(medium_id: m6.Media_ID,
     Title_Media: m6.Title,
-    Season_Number: 1,
+    Season_Number: 3,
     Date: DateTime.new(2009,9,12),
     Episode: 3)
 
-    e6_1 = Episode.create!(season_id: s6_1,
+    e6_1 = Episode.create!(season_id: s6_1.Season_Number,
         Episode_ID: 1,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 1",
@@ -124,7 +124,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2005,2,3),
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
-    e6_2 = Episode.create!(season_id: s6_1,
+    e6_2 = Episode.create!(season_id: s6_1.Season_Number,
         Episode_ID: 2,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 2",
@@ -132,7 +132,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2005,2,4),
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
-    e6_3 = Episode.create!(season_id: s6_1,
+    e6_3 = Episode.create!(season_id: s6_1.Season_Number,
         Episode_ID: 3,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 3",
@@ -140,7 +140,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2005,2,5),
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
-    e6_4 = Episode.create!(season_id: s6_1,
+    e6_4 = Episode.create!(season_id: s6_1.Season_Number,
         Episode_ID: 4,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 4",
@@ -148,7 +148,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2005,2,6),
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
-    e6_5 = Episode.create!(season_id: s6_1,
+    e6_5 = Episode.create!(season_id: s6_1.Season_Number,
         Episode_ID: 5,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 5",
@@ -156,7 +156,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2005,2,7),
         Description: "knlibapizeubrpzaubpzaiubrpz")
 ################################################################
-    e6_6 = Episode.create!(season_id: s6_2,
+    e6_6 = Episode.create!(season_id: s6_2.Season_Number,
         Episode_ID: 6,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 1",
@@ -164,7 +164,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2007,4,7),
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 
-    e6_7 = Episode.create!(season_id: s6_2,
+    e6_7 = Episode.create!(season_id: s6_2.Season_Number,
         Episode_ID: 7,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 2",
@@ -172,7 +172,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2007,4,8),
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 
-    e6_8 = Episode.create!(season_id: s6_2,
+    e6_8 = Episode.create!(season_id: s6_2.Season_Number,
         Episode_ID: 8,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 3",
@@ -180,7 +180,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2007,4,9),
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 
-    e6_9 = Episode.create!(season_id: s6_2,
+    e6_9 = Episode.create!(season_id: s6_2.Season_Number,
         Episode_ID: 9,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 4",
@@ -189,7 +189,7 @@ s6_3 = Season.create!(medium_id: m6,
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 ######################################################################
 
-    e6_1 = Episode.create!(season_id: s6_3,
+    e6_1 = Episode.create!(season_id: s6_3.Season_Number,
         Episode_ID: 10,
         Season_Number:s6_3.Season_Number,
         Title_Episode: "Titre 1",
@@ -197,7 +197,7 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2009,9,12),
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
 
-    e6_2 = Episode.create!(season_id: s6_3,
+    e6_2 = Episode.create!(season_id: s6_3.Season_Number,
         Episode_ID: 11,
         Season_Number:s6_3.Season_Number,
         Title_Episode: "Titre 2",
@@ -205,10 +205,10 @@ s6_3 = Season.create!(medium_id: m6,
         Date: DateTime.new(2009,9,13),
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
 
-    e6_3 = Episode.create!(season_id: s6_3,
+    e6_3 = Episode.create!(season_id: s6_3.Season_Number,
         Episode_ID: 12,
         Season_Number:s6_3.Season_Number,
         Title_Episode: "Titre 3",
         Episode_Number: 3,
         Date: DateTime.new(2009,9,14),
-        Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD"
+        Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")

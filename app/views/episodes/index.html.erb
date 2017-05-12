@@ -1,0 +1,6 @@
+<%- @episodes.each do |episode| -%>   
+    <div class="col-sm-6 col-md-3 encadrement-medium">            
+        <h2><%= episode.Title_Episode %> <%= episode.Episode_Number %></h2>
+        <p><%= episode.Date %></p>
+    </div>
+<% end %>

@@ -57,7 +57,7 @@ body{
     width: 100%;
 }
 
-.media{
+.media, .Season{
     border-style: solid;
     border-color: dodgerblue;
     border-radius: 10px;    
@@ -77,4 +77,8 @@ body{
     padding: 10px;
     margin-bottom: 20px;
     color:black;
+}
+
+.Season{
+    cursor: pointer;
 }
