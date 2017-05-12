@@ -6,12 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Suppression des media existants
 Medium.destroy_all
 
 def open_photo(name)
   File.open(Rails.root.join("db", "images", name))
 end
 
+# Création de media en attente de l'exportation du csv
 m1 = Medium.create!(Media_ID: 1,
 Title: "Brice de nice",
 Type: "FILM",
@@ -97,6 +99,7 @@ description: "Colter Stevens se réveille en sursaut dans un train à destinatio
 Colter se réveille alors dans un caisson étrange et découvre qu’il participe à un procédé expérimental permettant de se projeter dans le corps d’une personne et de revivre les 8 dernières minutes de sa vie. Sa mission : revivre sans cesse les quelques minutes précédant l’explosion afin d’identifier et d’arrêter les auteurs de l’attentat. A chaque échec, les chances de pouvoir revenir dans le passé s’amenuisent.
 Alors qu’il essaie d’empêcher l’explosion, ses supérieurs lui apprennent qu’un deuxième attentat est en préparation en plein cœur de Chicago et qu’il ne s’agit plus de protéger les quelques passagers du train mais la ville toute entière. La course contre la montre commence… ",
 photo: open_photo("sourcecode.jpg"))
+<<<<<<< HEAD
 
 s6_1 = Season.create!(medium_id: m6.Media_ID,
     Title_Media: m6.Title,
@@ -212,3 +215,5 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Episode_Number: 3,
         Date: DateTime.new(2009,9,14),
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
+=======
+>>>>>>> 922c5201b4260e720a3fa34a28d7a9a65cf98764

@@ -21,14 +21,23 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Sass-powered version of Bootstrap
 gem 'bootstrap-sass'
+# Scalable vector icons that can instantly be customized
 gem 'font-awesome-sass'
+# Simple Form helps you with powerful components to create your forms.
 gem 'simple_form'
+# Image upload, cloud storage, image manipulation, image API and fast CDN.
 gem 'cloudinary'
+# Photos and raw files handler.
 gem 'attachinary', github: 'assembler/attachinary'
+# Load environment variables from .env into ENV in development.
 gem 'dotenv-rails'
+# Flexible authentication solution for Rails.
 gem 'devise', '~> 4.2'
+# Translations for the devise gem.
 gem 'devise-i18n'
+# Central point to collect locale data for use in Ruby on Rails.
 gem 'rails-i18n'
 
 group :development do
