@@ -468,7 +468,6 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Episode_Number: 4,
         Date: DateTime.new(2007,4,10),
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
-######################################################################
 
     e6_1 = Episode.create!(season_id: s6_3.Season_Number,
         Episode_ID: 10,
@@ -493,3 +492,16 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Episode_Number: 3,
         Date: DateTime.new(2009,9,14),
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
+
+user1 = User.create!(
+  email: "batman@gmail.com",
+  encrypted_password: "azeaze",
+  username: "Batman"
+)
+
+m1 = Member_medium.create!(user_id: user1.id,
+    Member_Media_ID: 1,
+    Media: m1.Media_ID,
+    current_season: 1,
+    current_episode: 0,
+    Done: false)
