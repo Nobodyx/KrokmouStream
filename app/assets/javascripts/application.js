@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.ui.widget
 //= require jquery.iframe-transport
 //= require jquery.fileupload
@@ -23,7 +22,6 @@
 
 $(document).ready(function(){
     $('#Seasons').hide();
-    
     $( "#info_season" ).hover(
       function() {
         $( this ).css("color","white");
