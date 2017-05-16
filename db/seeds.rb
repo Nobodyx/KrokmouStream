@@ -493,13 +493,15 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Date: DateTime.new(2009,9,14),
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
 
-user1 = User.create!(
-  email: "batman@gmail.com",
-  encrypted_password: "azeaze",
-  username: "Batman"
-)
+        user1 = User.new(
+            :email                 => "batmand@gmail.com",
+            :password              => "batman",
+            :password_confirmation => "batman"
+        )
+        user.skip_confirmation!
+        user.save!
 
-m1 = Member_medium.create!(user_id: user1.id,
+m1 = MemberMedia.create!(user_id: user1.id,
     Member_Media_ID: 1,
     Media: m1.Media_ID,
     current_season: 1,
