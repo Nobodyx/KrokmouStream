@@ -99,7 +99,285 @@ description: "Colter Stevens se réveille en sursaut dans un train à destinatio
 Colter se réveille alors dans un caisson étrange et découvre qu’il participe à un procédé expérimental permettant de se projeter dans le corps d’une personne et de revivre les 8 dernières minutes de sa vie. Sa mission : revivre sans cesse les quelques minutes précédant l’explosion afin d’identifier et d’arrêter les auteurs de l’attentat. A chaque échec, les chances de pouvoir revenir dans le passé s’amenuisent.
 Alors qu’il essaie d’empêcher l’explosion, ses supérieurs lui apprennent qu’un deuxième attentat est en préparation en plein cœur de Chicago et qu’il ne s’agit plus de protéger les quelques passagers du train mais la ville toute entière. La course contre la montre commence… ",
 photo: open_photo("sourcecode.jpg"))
-<<<<<<< HEAD
+
+m10 = Medium.create!(Media_ID: 10,
+Title: "The 100",
+Type: "SERIE",
+Style: "Science fiction",
+Season: 4,
+Director: "Jason Rothenberg",
+description: "Cela fait 97 ans que les derniers humains se sont installés dans une base spatiale. 100 jeunes délinquants sont envoyés en exploration sur la Terre. ",
+photo: open_photo("the100.jpeg"))
+
+    s10_1 = Season.create!(medium_id: m10.Media_ID,
+        Title_Media: m10.Title,
+        Season_Number: 1,
+        Date: DateTime.new(2014,3,19),
+        Episode: 13)
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 1,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 1",
+            Episode_Number: 1,
+            Date: DateTime.new(2014,3,19),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 2,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 2",
+            Episode_Number: 2,
+            Date: DateTime.new(2014,3,20),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 3,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 3",
+            Episode_Number: 3,
+            Date: DateTime.new(2014,3,21),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 4,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 4",
+            Episode_Number: 4,
+            Date: DateTime.new(2014,3,22),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 5,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 5",
+            Episode_Number: 5,
+            Date: DateTime.new(2014,3,23),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 6,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 6",
+            Episode_Number: 6,
+            Date: DateTime.new(2014,3,24),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 7,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 7",
+            Episode_Number: 7,
+            Date: DateTime.new(2014,3,25),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 8,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 8",
+            Episode_Number: 8,
+            Date: DateTime.new(2014,3,26),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 9,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 9",
+            Episode_Number: 9,
+            Date: DateTime.new(2014,3,27),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 10,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 10",
+            Episode_Number: 10,
+            Date: DateTime.new(2014,3,28),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 11,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 11",
+            Episode_Number: 11,
+            Date: DateTime.new(2014,3,29),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 12,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 12",
+            Episode_Number: 12,
+            Date: DateTime.new(2014,3,30),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            Episode_ID: 13,
+            Season_Number:s10_1.Season_Number,
+            Title_Episode: "Titre 13",
+            Episode_Number: 13,
+            Date: DateTime.new(2014,3,31),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+
+
+
+
+    s10_2 = Season.create!(medium_id: m10.Media_ID,
+        Title_Media: m10.Title,
+        Season_Number: 2,
+        Date: DateTime.new(2014,10,2),
+        Episode: 13)
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 1,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 1",
+            Episode_Number: 1,
+            Date: DateTime.new(2014,10,2),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 2,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 2",
+            Episode_Number: 2,
+            Date: DateTime.new(2014,10,3),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 3,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 3",
+            Episode_Number: 3,
+            Date: DateTime.new(2014,10,4),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 4,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 4",
+            Episode_Number: 4,
+            Date: DateTime.new(2014,10,5),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 5,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 5",
+            Episode_Number: 5,
+            Date: DateTime.new(2014,10,6),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 6,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 6",
+            Episode_Number: 6,
+            Date: DateTime.new(2014,10,7),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 7,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 7",
+            Episode_Number: 7,
+            Date: DateTime.new(2014,10,8),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 8,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 8",
+            Episode_Number: 8,
+            Date: DateTime.new(2014,10,9),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 9,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 9",
+            Episode_Number: 9,
+            Date: DateTime.new(2014,10,10),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 10,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 10",
+            Episode_Number: 10,
+            Date: DateTime.new(2014,10,11),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 11,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 11",
+            Episode_Number: 11,
+            Date: DateTime.new(2014,10,12),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 12,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 12",
+            Episode_Number: 12,
+            Date: DateTime.new(2014,10,13),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 13,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 13",
+            Episode_Number: 13,
+            Date: DateTime.new(2014,10,14),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 14,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 14",
+            Episode_Number: 14,
+            Date: DateTime.new(2014,10,15),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 15,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 15",
+            Episode_Number: 15,
+            Date: DateTime.new(2014,10,16),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            Episode_ID: 16,
+            Season_Number:s10_2.Season_Number,
+            Title_Episode: "Titre 16",
+            Episode_Number: 16,
+            Date: DateTime.new(2014,10,17),
+            Description: "knlibapizeubrpzaubpzaiubrpz")
+
+
+m11 = Medium.create!(Media_ID: 11,
+Title: "Sense 8",
+Type: "SERIE",
+Style: "Science fiction",
+Season: 2,
+Director: "J. Michael Straczynski",
+description: "Huit individus éparpillés aux quatre coins du monde sont connectés par une soudaine et violente vision. Désormais liés, ils se retrouvent capables du jour au lendemain de se voir, de se sentir, de s'entendre et de se parler comme s'ils étaient au même endroit, et ainsi accéder aux plus sombres secrets des uns et des autres. Les huit doivent dès lors s'adapter à ce nouveau don, mais aussi comprendre le pourquoi du comment. Fuyant une organisation qui veut les capturer, les tuer ou faire d'eux des cobayes, ils cherchent quelles conséquences ce bouleversement pourrait avoir sur l'humanité. ",
+photo: open_photo("sense8.jpg"))
+
+
+m12 = Medium.create!(Media_ID: 12,
+Title: "Iron fist",
+Type: "SERIE",
+Style: "Science fiction",
+Season: 1,
+Director: "Scott Buck",
+description: "Daniel Rand revient à New York venger la mort de ses parents après avoir été formé aux arts martiaux dans la cité magique de K'un L'un, dans l'Himalaya.. ",
+photo: open_photo("ironfist.jpg"))
+
+
 
 s6_1 = Season.create!(medium_id: m6.Media_ID,
     Title_Media: m6.Title,
@@ -215,5 +493,3 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Episode_Number: 3,
         Date: DateTime.new(2009,9,14),
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
-=======
->>>>>>> 922c5201b4260e720a3fa34a28d7a9a65cf98764

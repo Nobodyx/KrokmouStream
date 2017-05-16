@@ -1,3 +1,4 @@
+require "csv"
 class MediaController < ApplicationController
     
     def index
