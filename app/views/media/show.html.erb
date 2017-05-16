@@ -1,4 +1,7 @@
 <%= render partial: "media/button_index" %>
+<% if user_signed_in?%>
+    <%= render partial: "media/button_save_medium" %>
+<% end %>
 <div class="media">
   <h1><%= @medium.Title %></h1>
   <div class="row medium">
