@@ -16,8 +16,9 @@
         <% if user_signed_in? %>
           <li><a href="#">Bienvenue, <%= current_user.email %></a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle glyphicon glyphicon-option-vertical" data-toggle="dropdown" role="button"
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
               aria-haspopup="true" aria-expanded="false">
+                <%= avatar_or_placeholder_tag(current_user) %><span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <li>

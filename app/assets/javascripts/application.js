@@ -45,5 +45,5 @@ $(document).ready(function(){
         target.children().toggle();
       }
     }
-    $( "ul" ).click( handler ).find( "ul" ).hide();
+    $( "ul#Seasons" ).click( handler ).find( "ul.Episodes" ).hide();
 });
