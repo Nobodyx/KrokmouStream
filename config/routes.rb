@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :episodes
-
+  resources :member_media
   resources :media, only: [:show] do
       resources :seasons, only: [:index]
   end

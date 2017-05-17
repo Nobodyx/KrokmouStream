@@ -1,0 +1,13 @@
+<div>
+    <h1>Mes séries</h1>
+</div>
+
+<div class="container encadrement-media">
+    <% if ! user_signed_in? %>
+        <%- @mediaUser.medium.each do |medium| -%>   
+            <div class="col-sm-6 col-md-3 encadrement-medium">            
+                <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), medium_path(medium)) %>
+            </div>
+        <% end %>
+    <% end %>
+</div>
