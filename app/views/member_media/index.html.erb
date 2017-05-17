@@ -1,13 +1,19 @@
-<div>
-    <h1>Mes séries</h1>
-</div>
-
 <div class="container encadrement-media">
     <% if user_signed_in? %>
-        <%- @member_media.each do |medium| -%>   
-            <div class="col-sm-6 col-md-3 encadrement-medium">            
-                <p>Medium numero <%= medium.Media %></p>
-            </div>
+        <div class="col-md-12">
+            <h1 class="text-center">Mes séries</h1>
+        </div>
+        <%- @member_media.each do |medium| -%>
+            <% if medium.user_id == current_user.id %>
+                <div class="col-sm-6 col-md-3 encadrement-medium-perso">
+                    <%- @media.each do |media| -%>
+                        <% if media.Media_ID == medium.Media %>
+                            <h2 class="text-center"><%= media.Title %></h2>
+                            <%= cl_image_tag(media.photo.path, class: "picture") %>
+                        <% end %>
+                    <% end %>
+                </div>
+            <% end %>
         <% end %>
     <% end %>
 </div>
