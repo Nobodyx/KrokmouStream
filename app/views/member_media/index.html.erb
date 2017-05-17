@@ -3,7 +3,7 @@
 </div>
 
 <div class="container encadrement-media">
-    <% if ! user_signed_in? %>
+    <% if user_signed_in? %>
         <%- @member_media.each do |medium| -%>   
             <div class="col-sm-6 col-md-3 encadrement-medium">            
                 <p>Medium numero <%= medium.Media %></p>
