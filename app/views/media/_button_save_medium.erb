@@ -1,4 +1,5 @@
-<%= simple_form_for(MemberMedia.new) do |f| %>
-  <%= f.input :Media, value: @medium.id  %>
-  <%= f.button :submit, value: "Marquer comme vu" %>
-<% end %>
+<p class="text-right">
+  <%= link_to(new_medium_member_medium_path(@medium), class: "btn btn-default") do %>
+    <%= icon("list") %> Marquer comme vu
+  <% end %>
+</p>

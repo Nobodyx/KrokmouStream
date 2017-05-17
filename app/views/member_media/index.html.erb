@@ -4,9 +4,9 @@
 
 <div class="container encadrement-media">
     <% if ! user_signed_in? %>
-        <%- @mediaUser.medium.each do |medium| -%>   
+        <%- @member_media.each do |medium| -%>   
             <div class="col-sm-6 col-md-3 encadrement-medium">            
-                <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), medium_path(medium)) %>
+                <p>Medium numero <%= medium.Media %></p>
             </div>
         <% end %>
     <% end %>
