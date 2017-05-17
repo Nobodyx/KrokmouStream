@@ -1,3 +1,4 @@
-<p class="text-center btn btn-default">
-  Marquer comme vu
-</p>
+<%= simple_form_for(MemberMedium.new) do |f| %>
+  <%= f.input :Media, value: @medium.id  %>
+  <%= f.button :submit, value: "Marquer comme vu" %>
+<% end %>
