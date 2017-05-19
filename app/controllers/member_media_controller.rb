@@ -4,6 +4,11 @@ class MemberMediaController < ApplicationController
 		@member_media = MemberMedia.all
 	end
     
+    def show
+        @member_medium = MemberMedia.find(params[:id])
+        @medium = Medium.where(["id = ?", @member_medium.Media]).first
+    end
+    
     def new
         @medium = Medium.find(params[:medium_id])
         MemberMedia.create!(user_id: current_user.id,
@@ -11,11 +16,11 @@ class MemberMediaController < ApplicationController
             Media: @medium.Media_ID,
             current_season: 0,
             current_episode: 0,
-            Done: false)
-        #@new_member_media = MemberMedia.new
-        #@new_member_media.user_id = current_user.id
-        #@new_member_media.Media = @medium.id
-        
+            Done: false)        
         redirect_to member_media_path
+    end
+    
+    def update
+        
     end
 end

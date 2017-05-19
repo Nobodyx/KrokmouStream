@@ -116,6 +116,7 @@ photo: open_photo("the100.jpeg"))
         Episode: 13)
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 1,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 1",
@@ -124,6 +125,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 2,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 2",
@@ -132,6 +134,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 3,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 3",
@@ -140,6 +143,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 4,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 4",
@@ -148,6 +152,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 5,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 5",
@@ -156,6 +161,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 6,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 6",
@@ -164,6 +170,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 7,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 7",
@@ -172,6 +179,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 8,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 8",
@@ -180,6 +188,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 9,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 9",
@@ -188,6 +197,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 10,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 10",
@@ -196,6 +206,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 11,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 11",
@@ -204,6 +215,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 12,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 12",
@@ -212,6 +224,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_1.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 13,
             Season_Number:s10_1.Season_Number,
             Title_Episode: "Titre 13",
@@ -230,6 +243,7 @@ photo: open_photo("the100.jpeg"))
         Episode: 13)
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 1,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 1",
@@ -238,6 +252,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 2,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 2",
@@ -246,6 +261,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 3,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 3",
@@ -254,6 +270,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 4,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 4",
@@ -262,6 +279,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 5,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 5",
@@ -270,6 +288,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 6,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 6",
@@ -278,6 +297,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 7,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 7",
@@ -286,6 +306,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 8,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 8",
@@ -294,6 +315,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 9,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 9",
@@ -302,6 +324,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 10,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 10",
@@ -310,6 +333,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 11,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 11",
@@ -318,6 +342,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 12,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 12",
@@ -326,6 +351,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 13,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 13",
@@ -334,6 +360,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 14,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 14",
@@ -342,6 +369,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 15,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 15",
@@ -350,6 +378,7 @@ photo: open_photo("the100.jpeg"))
             Description: "knlibapizeubrpzaubpzaiubrpz")
 
         e10_1 = Episode.create!(season_id: s10_2.Season_Number,
+            medium_id: m10.Media_ID,
             Episode_ID: 16,
             Season_Number:s10_2.Season_Number,
             Title_Episode: "Titre 16",
@@ -398,6 +427,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
     Episode: 3)
 
     e6_1 = Episode.create!(season_id: s6_1.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 1,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 1",
@@ -406,6 +436,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
     e6_2 = Episode.create!(season_id: s6_1.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 2,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 2",
@@ -414,6 +445,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
     e6_3 = Episode.create!(season_id: s6_1.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 3,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 3",
@@ -422,6 +454,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
     e6_4 = Episode.create!(season_id: s6_1.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 4,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 4",
@@ -430,6 +463,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "knlibapizeubrpzaubpzaiubrpz")
 
     e6_5 = Episode.create!(season_id: s6_1.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 5,
         Season_Number:s6_1.Season_Number,
         Title_Episode: "Titre 5",
@@ -438,6 +472,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "knlibapizeubrpzaubpzaiubrpz")
 ################################################################
     e6_6 = Episode.create!(season_id: s6_2.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 6,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 1",
@@ -446,6 +481,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 
     e6_7 = Episode.create!(season_id: s6_2.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 7,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 2",
@@ -454,6 +490,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 
     e6_8 = Episode.create!(season_id: s6_2.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 8,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 3",
@@ -462,6 +499,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 
     e6_9 = Episode.create!(season_id: s6_2.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 9,
         Season_Number:s6_2.Season_Number,
         Title_Episode: "Titre 4",
@@ -470,6 +508,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "PAPPAPAPAPAPAPPAAMMAZEKAZLEAEKALZEA")
 
     e6_1 = Episode.create!(season_id: s6_3.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 10,
         Season_Number:s6_3.Season_Number,
         Title_Episode: "Titre 1",
@@ -478,6 +517,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
 
     e6_2 = Episode.create!(season_id: s6_3.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 11,
         Season_Number:s6_3.Season_Number,
         Title_Episode: "Titre 2",
@@ -486,6 +526,7 @@ s6_3 = Season.create!(medium_id: m6.Media_ID,
         Description: "MQPMQSDPQSMDQPSDMQSDPQMSDQPSMD")
 
     e6_3 = Episode.create!(season_id: s6_3.Season_Number,
+        medium_id: m6.Media_ID,
         Episode_ID: 12,
         Season_Number:s6_3.Season_Number,
         Title_Episode: "Titre 3",

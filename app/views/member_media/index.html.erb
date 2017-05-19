@@ -3,17 +3,21 @@
         <div class="col-md-12">
             <h1 class="text-center">Mes séries</h1>
         </div>
-        <%- @member_media.each do |medium| -%>
-            <% if medium.user_id == current_user.id %>
+        <%- @member_media.each do |member_medium| -%>
+            <% if member_medium.user_id == current_user.id %>
                 <div class="col-sm-6 col-md-3 encadrement-medium-perso">
-                    <%- @media.each do |media| -%>
-                        <% if media.Media_ID == medium.Media %>
-                            <h2 class="text-center"><%= media.Title %></h2>
-                            <%= cl_image_tag(media.photo.path, class: "picture") %>
+                    <%- @media.each do |medium| -%>
+                        <% if medium.Media_ID == member_medium.Media %>
+                            <h2 class="text-center"><%= medium.Title %></h2>
+                            <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), member_medium_path(member_medium)) %>
                         <% end %>
                     <% end %>
                 </div>
             <% end %>
         <% end %>
+    <% else %>
+        <script type="text/javascript">
+        window.location.href="/users/sign_up" 
+      </script>
     <% end %>
 </div>
