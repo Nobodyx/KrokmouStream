@@ -31,6 +31,6 @@ class MemberMediaController < ApplicationController
     end
     
     def member_medium_params
-        params.require(:member_media).permit(:id, :current_season, :current_episode)
+        params.require(:member_media).permit(:current_season, :current_episode)
     end
 end
