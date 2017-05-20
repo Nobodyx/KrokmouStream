@@ -7,6 +7,8 @@ class MediaController < ApplicationController
 
     def show
         @medium = Medium.find(params[:id])
-        @member_medium = MemberMedia.where(["user_id = ? and medium_id = ?", current_user.id, @medium.id]).first
+        if user_signed_in?
+            @member_medium = MemberMedia.where(["user_id = ? and medium_id = ?", current_user.id, @medium.id]).first            
+        end
     end
 end
