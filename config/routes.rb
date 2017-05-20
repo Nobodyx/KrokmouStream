@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :episodes
-<<<<<<< HEAD
   resources :member_media, only: [:index, :show, :update]
   resources :media, only: [:show] do
       resources :seasons, only: [:index]
@@ -8,7 +7,7 @@ Rails.application.routes.draw do
   end
     
   namespace :api_v1 do
-    resources :episodes, only: [:index :show]
+    resources :episodes, only: [:index, :show]
     resources :episodes, only: [:index, :show]
   end
     
