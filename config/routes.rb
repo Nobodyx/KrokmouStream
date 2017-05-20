@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
   namespace :api_v1 do
-    resources :episodes, only: [:index :show]
+    resources :episodes, only: [:index, :show]
   end
 
   devise_for :users
