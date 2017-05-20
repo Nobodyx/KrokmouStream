@@ -1,4 +1,4 @@
-class ApiV1::EpisodesController < ApplicationController
+class ApiV1::EpisodesController < ActionController::Base
   def index
     @episodes = Episode.all
   end
