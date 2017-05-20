@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   namespace :api_v1 do
     resources :episodes, only: [:index, :show]
+    resources :media, only: [:index]
   end
 
   devise_for :users
