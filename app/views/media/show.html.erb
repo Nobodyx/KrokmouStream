@@ -30,11 +30,11 @@
     <% seasons = Season.all %>
     <%- seasons.each do |season| -%>
         <% if season.title_media == @medium.title %>
-          <div class="col-sm-12 text-center Season">
+          <div class="col-sm-12 text-center Season color-red">
             Saison <%= season.season_number %>
-            <p>Date de Sortie: <%= season.date %></p>
-            <p>Nombre d'épisode: <%= season.nb_episode %></p>
-            <ul class="Episodes text-left col-md-12">
+            <p class="color-white">Date de Sortie: <%= season.date %></p>
+            <p class="color-white">Nombre d'épisode: <%= season.nb_episode %></p>
+            <ul class="Episodes text-left col-md-12 color-white">
                 <% episodes = Episode.all %>
                 <%- episodes.each do |episode| -%>
                     <% if (episode.season_number == season.season_number) && (episode.medium_id == season.medium_id) %>
