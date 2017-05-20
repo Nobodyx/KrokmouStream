@@ -1,3 +1,3 @@
-json.episodes(@episodes) do |episode|
-  json.title episode.Title
+json.media(@media) do |medium|
+  json.title medium.Title
 end
