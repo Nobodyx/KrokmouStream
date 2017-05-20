@@ -1,6 +1,8 @@
 <%= render partial: "media/button_index" %>
 <% if user_signed_in?%>
-    <%= render partial: "media/button_save_medium" %>
+    <% if @member_medium.Media != @medium.Media_ID %>
+        <%= render partial: "media/button_save_medium" %>
+    <% end %>
 <% end %>
 <div class="media">
   <h1><%= @medium.Title %></h1>
