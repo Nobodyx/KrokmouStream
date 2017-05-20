@@ -1,4 +1,4 @@
-json.member_media(@member_media) do |member_medium|
+json.member_media(MemberMedia.all) do |member_medium|
   json.user_id member_medium.user_id
   json.member_media_id member_medium.Member_Media_ID
   json.media member_medium.Media
@@ -11,5 +11,4 @@ json.member_media(@member_media) do |member_medium|
 end
 
 json.current_user current_user.id
-json.current_size_member_media @member_media.count
 json.media_id @medium.id
