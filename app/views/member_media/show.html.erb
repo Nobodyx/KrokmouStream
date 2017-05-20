@@ -1,3 +1,4 @@
+<%= debug params %>
 <p class="text-right">
   <%= link_to(member_media_path, class: "btn btn-default") do %>
     <%= icon("list") %> Retour à l'accueil
@@ -31,9 +32,11 @@
                         <h4><%= episode.Title_Episode %></h4>
                         <p>Sortie le : <%= episode.Date%></p>
                           <% if user_signed_in?%>
-                            <%= simple_form_for(@member_medium), :method => :PUT do |f| %>
-                              <%= f.input :text, label: false %>
-                              <%= f.button :submit %>
+                            <%= simple_form_for(@member_medium) do |f| %>
+                              <%= f.input :id, as: :hidden, input_html: {value: @member_medium.id}, label: false %>
+                              <%= f.input :current_season, as: :hidden, input_html: {value: episode.Season_Number} , label: false %>
+                              <%= f.input :current_episode, as: :hidden, input_html: {value: episode.Episode_Number}, label: false %>
+                              <%= f.button :submit, :value => 'Marquer comme vu' %>
                             <% end %>
                           <% end %>
                       </div>
