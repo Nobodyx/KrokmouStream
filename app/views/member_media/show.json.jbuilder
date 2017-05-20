@@ -1,4 +1,4 @@
-json.member_media(@member_media) do |member_medium|
+json.member_media(MemberMedia.all) do |member_medium|
   json.user_id member_medium.user_id
   json.member_media_id member_medium.Member_Media_ID
   json.media member_medium.Media
