@@ -1,12 +1,6 @@
 class ApiV1::EpisodesController < ActionController::Base
   def index
     @episodes = Episode.all
-
-    respond_to do |format|
-      format.json do
-        @episodes = Episode.all
-      end
-    end
   end
 
   def show
