@@ -17,7 +17,9 @@
     <div class="col-sm-8">
       <p>Type: <%= @medium.style %></p>
         <p>Style: <%= @medium.genre %></p>
-        <p id="info_season" style="cursor:pointer;">Nombre de saison: <%= @medium.nb_season %></p>
+        <p>Nombre de saison: <%= @medium.nb_season %>
+            <button id="info_season" class="btn btn-default" style="margin-left:5px">Voir les épisodes</button>
+        </p>
         <p>Créateur: <%= @medium.director %></p>
         <p>Synopsis: <%=@medium.description%></p>
     </div>
