@@ -5,7 +5,7 @@
 </p>
 <div class="media">
     <div class="col-sm-6 col-md-3 encadrement-medium-perso">
-        <h2 class="text-center"><%= @medium.Title %></h2>
+        <h2 class="text-center"><%= @medium.title %></h2>
         <%= cl_image_tag(@medium.photo.path, class: "picture") %>
     </div>
     <h2 class="text-center">Saison en cours de visualisation : <%= @member_medium.current_season %></h2> 
@@ -17,24 +17,24 @@
 <div id="Seasons_member" class="container">
     <% seasons = Season.all %>
     <%- seasons.each do |season| -%>
-        <% if season.Title_Media == @medium.Title %>
+        <% if season.title_media == @medium.title %>
           <div class="col-sm-12 text-center Season">
-            Saison <%= season.Season_Number %>
-            <p>Date de Sortie: <%= season.Date %></p>
-            <p>Nombre d'épisode: <%= season.Episode %></p>
+            Saison <%= season.season_number %>
+            <p>Date de Sortie: <%= season.date %></p>
+            <p>Nombre d'épisode: <%= season.episode %></p>
             <div class="Episodes text-left col-md-12">
                 <% episodes = Episode.all %>
                 <%- episodes.each do |episode| -%>
-                    <% if episode.Season_Number == season.Season_Number && episode.medium_id == season.medium_id %>
+                    <% if episode.season_number == season.season_number && episode.medium_id == season.medium_id %>
                       <div class="Episode col-md-2">
-                        <h3>Episode <%= episode.Episode_Number%></h3>
-                        <h4><%= episode.Title_Episode %></h4>
-                        <p>Sortie le : <%= episode.Date%></p>
+                        <h3>Episode <%= episode.episode_number%></h3>
+                        <h4><%= episode.title_episode %></h4>
+                        <p>Sortie le : <%= episode.date%></p>
                           <% if user_signed_in?%>
                             <%= simple_form_for(@member_medium) do |f| %>
                               <%= f.input :id, as: :hidden, input_html: {value: @member_medium.id}, label: false %>
-                              <%= f.input :current_season, as: :hidden, input_html: {value: episode.Season_Number} , label: false %>
-                              <%= f.input :current_episode, as: :hidden, input_html: {value: episode.Episode_Number}, label: false %>
+                              <%= f.input :current_season, as: :hidden, input_html: {value: episode.season_number} , label: false %>
+                              <%= f.input :current_episode, as: :hidden, input_html: {value: episode.episode_number}, label: false %>
                               <%= f.button :submit, :value => 'Marquer comme vu' %>
                             <% end %>
                           <% end %>

@@ -1,20 +1,20 @@
 <%= render partial: "media/button_index" %>
 <% if user_signed_in?%>
-    <% if @member_medium.Media != @medium.Media_ID %>
+    <% if @member_medium.medium_id != @medium.id %>
         <%= render partial: "media/button_save_medium" %>
     <% end %>
 <% end %>
 <div class="media">
-  <h1><%= @medium.Title %></h1>
+  <h1><%= @medium.title %></h1>
   <div class="row medium">
     <div class="col-sm-4">
       <%= cl_image_tag(@medium.photo.path,crop: :fill, class: "picture_fullscreen") %>
     </div>
     <div class="col-sm-8">
-      <p>Type: <%= @medium.Type %></p>
-        <p>Style: <%= @medium.Style %></p>
-        <p id="info_season" style="cursor:pointer;">Nombre de saison: <%= @medium.Season %></p>
-        <p>Créateur: <%= @medium.Director %></p>
+      <p>Type: <%= @medium.style %></p>
+        <p>Style: <%= @medium.genre %></p>
+        <p id="info_season" style="cursor:pointer;">Nombre de saison: <%= @medium.season %></p>
+        <p>Créateur: <%= @medium.director %></p>
         <p>Synopsis: <%=@medium.description%></p>
     </div>
   </div>
@@ -23,19 +23,19 @@
 <ul id="Seasons" class="container">
     <% seasons = Season.all %>
     <%- seasons.each do |season| -%>
-        <% if season.Title_Media == @medium.Title %>
+        <% if season.title_media == @medium.title %>
           <div class="col-sm-12 text-center Season">
-            Saison <%= season.Season_Number %>
-            <p>Date de Sortie: <%= season.Date %></p>
-            <p>Nombre d'épisode: <%= season.Episode %></p>
+            Saison <%= season.season_number %>
+            <p>Date de Sortie: <%= season.date %></p>
+            <p>Nombre d'épisode: <%= season.episode %></p>
             <ul class="Episodes text-left col-md-12">
                 <% episodes = Episode.all %>
                 <%- episodes.each do |episode| -%>
-                    <% if episode.Season_Number == season.Season_Number %>
+                    <% if episode.season_number == season.season_number %>
                       <div class="Episode col-md-2">
-                        <h3>Episode <%= episode.Episode_Number%></h3>
-                        <h4><%= episode.Title_Episode %></h4>
-                        <p>Sortie le : <%= episode.Date%></p>
+                        <h3>Episode <%= episode.episode_number%></h3>
+                        <h4><%= episode.title_episode %></h4>
+                        <p>Sortie le : <%= episode.date%></p>
                       </div>
                     <% end %>
                 <% end %>

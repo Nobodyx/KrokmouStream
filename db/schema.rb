@@ -33,24 +33,22 @@ ActiveRecord::Schema.define(version: 20170520085340) do
   create_table "episodes", force: :cascade do |t|
     t.integer  "season_id"
     t.integer  "medium_id"
-    t.integer  "Episode_ID"
-    t.integer  "Season_Number"
-    t.string   "Title_Episode"
-    t.integer  "Episode_Number"
-    t.datetime "Date"
-    t.string   "Description"
+    t.integer  "season_number"
+    t.string   "title_episode"
+    t.integer  "episode_number"
+    t.datetime "date"
+    t.string   "description"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.index ["season_id"], name: "index_episodes_on_season_id", using: :btree
   end
 
   create_table "media", force: :cascade do |t|
-    t.integer  "Media_ID"
-    t.string   "Title"
-    t.string   "Type"
-    t.string   "Style"
-    t.integer  "Season"
-    t.string   "Director"
+    t.string   "title"
+    t.string   "style"
+    t.string   "genre"
+    t.integer  "nb_season"
+    t.string   "director"
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -58,8 +56,7 @@ ActiveRecord::Schema.define(version: 20170520085340) do
 
   create_table "member_media", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "Member_Media_ID"
-    t.integer  "Media"
+    t.integer  "medium_id"
     t.integer  "current_season"
     t.integer  "current_episode"
     t.boolean  "Done"
@@ -70,10 +67,10 @@ ActiveRecord::Schema.define(version: 20170520085340) do
 
   create_table "seasons", force: :cascade do |t|
     t.integer  "medium_id"
-    t.string   "Title_Media"
-    t.integer  "Season_Number"
-    t.datetime "Date"
-    t.integer  "Episode"
+    t.string   "title_media"
+    t.integer  "season_number"
+    t.datetime "date"
+    t.integer  "nb_episode"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.index ["medium_id"], name: "index_seasons_on_medium_id", using: :btree
