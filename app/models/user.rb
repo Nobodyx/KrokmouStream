@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  acts_as_token_authenticatable
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -7,4 +6,5 @@ class User < ApplicationRecord
   has_many:member_media
   has_attachment :avatar, accept: [:jpg, :png, :jpeg]
   validates :username, presence: true, uniqueness: true
+  acts_as_token_authenticatable
 end
