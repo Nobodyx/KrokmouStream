@@ -7,8 +7,10 @@ json.member_media(@member_media) do |member_medium|
     json.current_episode member_medium.current_episode
     json.done member_medium.Done
 
-    json.medium(member_medium.medium) do |current_medium|
-      json.title current_medium.Title
+    json.medium(@media) do |medium|
+      if medium.Media_ID == member_medium.Member_Media_ID
+        json.title medium.Title
+      end
     end
   end
 end

@@ -3,5 +3,6 @@ class ApiV1::MemberMediaController < ApplicationController
 
   def index
     @member_media = MemberMedia.all
+    @media = Media.all
   end
 end
