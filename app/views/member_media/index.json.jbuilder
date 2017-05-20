@@ -6,4 +6,4 @@ json.member_media(@member_media) do |member_medium|
 end
 
 json.current_user_email current_user.email
-json.current_user_id curent_user.id
+json.current_user_id current_user.id
