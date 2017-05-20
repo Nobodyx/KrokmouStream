@@ -3,7 +3,7 @@ class ApiV1::EpisodesController < ActionController::Base
     @episodes = Episode.all
 
     respond_to do |format|
-      format.js do
+      format.json do
         @episodes = Episode.all
       end
     end
