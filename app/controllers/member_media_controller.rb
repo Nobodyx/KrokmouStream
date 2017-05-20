@@ -25,7 +25,7 @@ class MemberMediaController < ApplicationController
     #end
     
     def update
-        MemberMedia.update(member_medium_params)
+        MemberMedia.update(params[:id],member_medium_params)
         redirect_to member_medium_path
     end
     
