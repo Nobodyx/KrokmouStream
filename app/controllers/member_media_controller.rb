@@ -20,7 +20,8 @@ class MemberMediaController < ApplicationController
         redirect_to member_media_path
     end
     
-    def update
-        
+    def update(id,season_number,episode_number)
+        MemberMedia.update(id, :current_season => season_number, :current_episode => episode_number)
+        redirect_to member_media_path
     end
 end
