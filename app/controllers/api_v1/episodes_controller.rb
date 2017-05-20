@@ -4,7 +4,7 @@ class ApiV1::EpisodesController < ActionController::Base
   end
 
   def show
-    @episode = Episode.find(params[:id])
+    @episode = Episode.find(params[:Episode_ID])
   rescue ActiveRecord::RecordNotFound => ex
     render json: {error: ex.messager }, status: not_found
   end
