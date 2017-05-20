@@ -11,3 +11,5 @@ json.member_media(@member_media) do |member_medium|
 end
 
 json.current_user current_user.id
+json.current_size_member_media @member_media.count
+json.media_id @medium.id
