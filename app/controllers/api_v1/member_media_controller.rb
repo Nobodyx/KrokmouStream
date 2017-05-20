@@ -8,7 +8,7 @@ class ApiV1::MemberMediaController < ApplicationController
 
   def show
     @member_media = MemberMedia.all
-    @medium = Medium.find(params[:id])
+    @medium = Medium.where(params[:id])
   rescue ActiveRecord::RecordNotFound => ex
     render json: { error: ex.message }, status: :not_found
   end
