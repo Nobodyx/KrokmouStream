@@ -1,9 +1,9 @@
 json.media(@media) do |medium|
-  json.id medium.Media_ID
-  json.title medium.Title
-  json.type medium.Type
-  json.style medium.Style
-  json.season medium.Season
-  json.director medium.Director
+  json.id medium.id
+  json.title medium.title
+  json.type medium.style
+  json.style medium.genre
+  json.season medium.season
+  json.director medium.director
   json.description medium.description
 end

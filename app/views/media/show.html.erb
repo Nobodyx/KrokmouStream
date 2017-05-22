@@ -1,18 +1,26 @@
 <%= render partial: "media/button_index" %>
 <% if user_signed_in?%>
-    <%= render partial: "media/button_save_medium" %>
+    <% if @member_medium.nil?%>
+        <%= render partial: "media/button_save_medium" %>
+    <% else %>
+        <% if @member_medium.medium_id != @medium.id %>
+            <%= render partial: "media/button_save_medium" %>
+        <% end %>
+    <% end %>
 <% end %>
 <div class="media">
-  <h1><%= @medium.Title %></h1>
+  <h1><%= @medium.title %></h1>
   <div class="row medium">
     <div class="col-sm-4">
       <%= cl_image_tag(@medium.photo.path,crop: :fill, class: "picture_fullscreen") %>
     </div>
     <div class="col-sm-8">
-      <p>Type: <%= @medium.Type %></p>
-        <p>Style: <%= @medium.Style %></p>
-        <p id="info_season" style="cursor:pointer;">Nombre de saison: <%= @medium.Season %></p>
-        <p>Créateur: <%= @medium.Director %></p>
+      <p>Type: <%= @medium.style %></p>
+        <p>Style: <%= @medium.genre %></p>
+        <p>Nombre de saison: <%= @medium.nb_season %>
+            <button id="info_season" class="btn btn-default" style="margin-left:5px">Voir les épisodes</button>
+        </p>
+        <p>Créateur: <%= @medium.director %></p>
         <p>Synopsis: <%=@medium.description%></p>
     </div>
   </div>
@@ -21,19 +29,19 @@
 <ul id="Seasons" class="container">
     <% seasons = Season.all %>
     <%- seasons.each do |season| -%>
-        <% if season.Title_Media == @medium.Title %>
-          <div class="col-sm-12 text-center Season">
-            Saison <%= season.Season_Number %>
-            <p>Date de Sortie: <%= season.Date %></p>
-            <p>Nombre d'épisode: <%= season.Episode %></p>
-            <ul class="Episodes text-left col-md-12">
+        <% if season.title_media == @medium.title %>
+          <div class="col-sm-12 text-center Season color-red">
+            Saison <%= season.season_number %>
+            <p class="color-white">Date de Sortie: <%= season.date %></p>
+            <p class="color-white">Nombre d'épisode: <%= season.nb_episode %></p>
+            <ul class="Episodes text-left col-md-12 color-white">
                 <% episodes = Episode.all %>
                 <%- episodes.each do |episode| -%>
-                    <% if episode.Season_Number == season.Season_Number %>
+                    <% if (episode.season_number == season.season_number) && (episode.medium_id == season.medium_id) %>
                       <div class="Episode col-md-2">
-                        <h3>Episode <%= episode.Episode_Number%></h3>
-                        <h4><%= episode.Title_Episode %></h4>
-                        <p>Sortie le : <%= episode.Date%></p>
+                        <h3>Episode <%= episode.episode_number%></h3>
+                        <h4><%= episode.title_episode %></h4>
+                        <p>Sortie le : <%= episode.date%></p>
                       </div>
                     <% end %>
                 <% end %>

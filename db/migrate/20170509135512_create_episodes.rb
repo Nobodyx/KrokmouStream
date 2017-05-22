@@ -3,12 +3,11 @@ class CreateEpisodes < ActiveRecord::Migration[5.0]
     create_table :episodes do |t|
       t.belongs_to :season, index:true
       t.integer  :medium_id
-      t.integer :Episode_ID
-      t.integer :Season_Number
-      t.string :Title_Episode
-      t.integer :Episode_Number
-      t.datetime :Date
-      t.string :Description
+      t.integer :season_number
+      t.string :title_episode
+      t.integer :episode_number
+      t.datetime :date
+      t.string :description
 
       t.timestamps
     end
