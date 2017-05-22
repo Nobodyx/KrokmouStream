@@ -1,6 +1,6 @@
 class MemberMediaController < ApplicationController
 	def index
-        @media = Medium.all
+    @media = Medium.all
 		@member_media = MemberMedia.all
 	end
     

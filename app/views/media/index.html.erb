@@ -25,5 +25,21 @@
                 <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), medium_path(medium)) %>
             </div>
         <% end %>
+        <% indexMemberMedia %>
+				<%- @member_media.each do |member_medium| -%>
+						<% if member_medium.user_id == current_user.id %>
+								<div class="col-sm-6 col-md-3 encadrement-medium-perso">
+										<%- @media.each do |medium| -%>
+												<% if medium.Media_ID == member_medium.Media && medium.Style == "SERIE" %>
+														<h2 class="text-center"><%= medium.Title %></h2>
+														<%= link_to(cl_image_tag(medium.photo.path, class: "picture"), member_medium_path(member_medium)) %>
+												<% end %>
+										<% end %>
+								</div>
+						<% end %>
+				<% end %>
     <% end %>
 </div>
+
+
+
