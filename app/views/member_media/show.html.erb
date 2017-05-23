@@ -3,6 +3,11 @@
     <%= icon("list") %> Retour à mes series
   <% end %>
 </p>
+
+<p class="text-left btn btn-default">
+    <%= link_to 'Supprimer de mes series', @member_medium, :method => 'delete' %>
+</p>
+
 <div class="media">
     <div class="col-sm-6 col-md-3 encadrement-medium-perso">
         <h2 class="text-center"><%= @medium.title %></h2>
