@@ -30,7 +30,7 @@ Si jamais c'est un utilisateur authentifier alors il aura accès à bien plus de
 
 Il est possible qu'un utilisateur anonyme ai accès au détails d'une série pour avoir des informations basique sur la série ainsi que le saisons et épisode de celle-ci. Pour cela il lui suffit simplement de cliquer sur une série ainsi que voir les épisodes puis les saisons.
 
-![alt text](http://imgur.com/a/LVodx.png)
+![alt text](http://imgur.com/LVodx.png)
 
   - En tant que fan de séries,
   Je peux m'inscrire sur le site
@@ -38,7 +38,7 @@ Il est possible qu'un utilisateur anonyme ai accès au détails d'une série pou
 
 Pour cette user story nous avons mis en place l'utilisation de la gem DEVISE, qui nous permet de gérer plus facilement nos Users avec formulaire d'inscription, de connexion ainsi que de modification de compte. La base "user" de DEVISE sera adapter à l'ensemble de notre base de données.
 
-![alt text](http://imgur.com/a/z0qY0.png)
+![alt text](http://imgur.com/z0qY0.png)
 
   - En tant que membre du site,
   Je peux ajouter à mon espace perso une série que je regarde
@@ -48,7 +48,7 @@ Pour cette user story nous avons mis en place l'utilisation de la gem DEVISE, qu
 Sur la page d'accueil il est possible d'avoir un visuel en liste d'image des séries de KrokmouStream. Lorsque l'on accède aux informations d'une série pour avoir plus de détails sur celle-ci, si l'on est connecté, on pourra observé la présence d'un bouton "Ajouter à mes séries".
 Ce qui créera automatiquement l'ajout d'une série pour l'utilisateur afin de gérer ses épisodes.
 
-![alt text](http://imgur.com/a/xVRSx.png)
+![alt text](http://imgur.com/xVRSx.png)
 
   - En tant que membre du site,
   Je peux "marquer comme lu" un épisode d'une série
