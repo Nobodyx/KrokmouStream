@@ -41,7 +41,7 @@ gem 'devise-i18n'
 gem 'rails-i18n'
 
 gem 'parallax-rails', '~> 1.0'
-gem 'owlcarousel-rails'
+gem 'owlcarousel2-rails', '~> 2.1'
 
 group :development do
   gem 'binding_of_caller'

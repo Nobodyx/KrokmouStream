@@ -9,10 +9,9 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *= require owl.carousel
- *= require owl.theme
+ *= require owl.carousel2
  *= require_tree .
- *= require_self
+ *= require_self 
  */
 
 @import "bootstrap-sprockets";
@@ -159,4 +158,29 @@ body{
 
 .simple_form input{
     margin-bottom: 5px;
+}
+
+.owl-nav{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.owl-prev, .owl-next{
+    background-color: rgba(255, 255, 255, 0.91);
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.owl-prev:hover, .owl-next:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white;
 }
