@@ -9,35 +9,6 @@ Le projet est mené par une équipe de développeur d'Ingésup B3 au sein d'Ynov
 
 L'application permet les User Stories suivantes :
 
-  - En tant que fan de séries,
-  Je peux m'inscrire sur le site
-  Afin de profiter des fonctionnalités du site.
-
-Blabla
-
-  - En tant que membre du site,
-  Je peux ajouter à mon espace perso une série que je regarde
-    (sélectionnée dans une liste / un auto-complete)
-  Afin d'enregistrer quels épisodes j'ai déjà visionnés.
-
-Blabla
-
-  - En tant qu'internaute (anonyme)
-  Je peux consulter une liste globale de tous les épisodes d'une série donnée,
-    organisée saison par saison (sous la forme saison>x<episode: 3x04)
-  Afin de connaître leurs titres et dates de diffusion
-
-Blabla
-
-  - En tant que membre du site,
-  Je peux "marquer comme lu" un épisode d'une série
-  Afin que le site mémorise pour moi cette information.
-
-Les saisons et épisodes peuvent être marqués comme vu une fois que la série a été ajouté aux séries de l'utilisateur,
-cette action est réalisable grâce à un bouton "Marquer comme vu" : 
-
-![alt text](http://i.imgur.com/0GkkBC9.jpg)
-
   - En tant qu'internaute (anonyme)
   Je peux visualiser en page d'accueil 2 à 4 séries
     mises en avant sur le site (avec une image par exemple)
@@ -47,6 +18,42 @@ Une fois arrivé sur la page, un internaute peut voir une liste de séries et pe
 pour avoir plus d'informations dessus :
 
 ![alt text](http://i.imgur.com/TXmpKZ0.jpg)
+
+  - En tant qu'internaute (anonyme)
+  Je peux consulter une liste globale de tous les épisodes d'une série donnée,
+    organisée saison par saison (sous la forme saison>x<episode: 3x04)
+  Afin de connaître leurs titres et dates de diffusion
+
+Il est possible qu'un utilisateur anonyme ai accès au détails d'une série pour avoir des informations basique sur la série ainsi que le saisons et épisode de celle-ci. Pour cela il lui suffit simplement de cliquer sur une série ainsi que voir les épisodes puis les saisons.
+
+![alt text](http://imgur.com/a/LVodx.jpg)
+
+  - En tant que fan de séries,
+  Je peux m'inscrire sur le site
+  Afin de profiter des fonctionnalités du site.
+
+Pour cette user story nous avons mis en place l'utilisation de la gem DEVISE, qui nous permet de gérer plus facilement nos Users avec formulaire d'inscription, de connexion ainsi que de modification de compte. La base "user" de DEVISE sera adapter à l'ensemble de notre base de données.
+
+![alt text](http://imgur.com/a/z0qY0.jpg)
+
+  - En tant que membre du site,
+  Je peux ajouter à mon espace perso une série que je regarde
+    (sélectionnée dans une liste / un auto-complete)
+  Afin d'enregistrer quels épisodes j'ai déjà visionnés.
+
+Sur la page d'accueil il est possible d'avoir un visuel en liste d'image des séries de KrokmouStream. Lorsque l'on accède aux informations d'une série pour avoir plus de détails sur celle-ci, si l'on est connecté, on pourra observé la présence d'un bouton "Ajouter à mes séries".
+Ce qui créera automatiquement l'ajout d'une série pour l'utilisateur afin de gérer ses épisodes.
+
+![alt text](http://imgur.com/a/xVRSx.jpg)
+
+  - En tant que membre du site,
+  Je peux "marquer comme lu" un épisode d'une série
+  Afin que le site mémorise pour moi cette information.
+
+Les saisons et épisodes peuvent être marqués comme vu une fois que la série a été ajouté aux séries de l'utilisateur,
+cette action est réalisable grâce à un bouton "Marquer comme vu" : 
+
+![alt text](http://i.imgur.com/0GkkBC9.jpg)
 
   - En tant que membre du site
   Je peux consulter sur la page d'accueil du site les prochains épisodes
