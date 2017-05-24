@@ -17,26 +17,12 @@
 //= require jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-//= require bootstrap-sprockets
 //= require owl.carousel2
 //= require_tree .
+//= require bootstrap-sprockets
 
 
-
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items: 3,
-        nav:true,
-        center:true,
-        stagePadding:0,
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true                                                   
-    });
-    owl.trigger('play.owl.autoplay',[3000])
-    
+$(document).ready(function(){    
     $('#Seasons').hide();
     $( "#info_season" ).hover(
       function() {
@@ -62,4 +48,17 @@ $(document).ready(function(){
       }
     }
     $( "ul#Seasons" ).click( handler ).find( "ul.Episodes" ).hide();
+    
+    $(".owl-carousel").owlCarousel({
+        items: 3,
+        nav:true,
+        center:true,
+        stagePadding:0,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true                                                   
+    });
+    owl.trigger('play.owl.autoplay',[3000])
 });
