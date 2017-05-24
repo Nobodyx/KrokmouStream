@@ -56,7 +56,7 @@ pour avoir plus d'informations dessus :
 Sur la page d'accueil, un carousel défilant affiche les séries suivie par l'utilisateur connecté
 ainsi que les saisons et épisodes vus :
 
-![alt text](http://i.imgur.com/42mOdt1.jpg)
+![alt text](http://i.imgur.com/PrBk7AE.jpg)
   
 User story bonus :
 
