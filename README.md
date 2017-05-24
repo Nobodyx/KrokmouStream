@@ -47,6 +47,10 @@ Blabla
     à voir pour chaque série que j'ai enregistrée sur le site
   Afin de ne rater aucun épisode.
   
+Sur la page d'accueil, un carousel défilant affiche les séries suivie pa l'utilisateur connecté
+ainsi que les saisons et épisodes vus.
+http://imgur.com/42mOdt1
+  
 User story bonus :
 
   - En tant qu'internaute anonyme,
