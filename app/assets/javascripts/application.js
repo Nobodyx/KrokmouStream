@@ -17,8 +17,6 @@
 //= require jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-//= require parallax
-//= require jquery.parallax
 //= require_tree .
 //= require bootstrap-sprockets
 
