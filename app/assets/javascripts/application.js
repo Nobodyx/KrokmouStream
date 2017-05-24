@@ -10,18 +10,19 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery2
 //= require jquery_ujs
 //= require jquery.ui.widget
 //= require jquery.iframe-transport
 //= require jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
+//= require owl.carousel2
 //= require_tree .
 //= require bootstrap-sprockets
 
 
-$(document).ready(function(){
+$(document).ready(function(){    
     $('#Seasons').hide();
     $( "#info_season" ).hover(
       function() {
@@ -47,4 +48,17 @@ $(document).ready(function(){
       }
     }
     $( "ul#Seasons" ).click( handler ).find( "ul.Episodes" ).hide();
+    
+    $(".owl-carousel").owlCarousel({
+        items: 3,
+        nav:true,
+        center:true,
+        stagePadding:0,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true                                                   
+    });
+    owl.trigger('play.owl.autoplay',[3000])
 });

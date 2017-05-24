@@ -1,0 +1,23 @@
+<div class="owl-carousel">
+  <%- @member_media.each do |member_medium| -%>
+    <% if member_medium.user_id == current_user.id %>                         
+        <%- @media.each do |medium| -%>
+                <% if medium.id == member_medium.medium_id && medium.style == "SERIE" %>
+                    <div>
+                        <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), member_medium_path(member_medium)) %>
+                        <% unless member_medium.current_episode == 0 %>
+                            <div class="text-center color-carrousel">
+                                <p> Saison en cours : <%= member_medium.current_season %> </p>
+                                <p> Episode en cours : <%= member_medium.current_episode %> </p>
+                            </div>
+                        <% else %>
+                            <div class="text-center color-carrousel">
+                                <p> Encore aucun épisode vu.</p>
+                            </div>
+                        <% end %>
+                    </div>
+                <% end %>
+        <% end %>
+    <% end %>
+  <% end %>
+</div>
