@@ -35,7 +35,7 @@ Blabla
 
 Les saisons et épisodes peuvent être marqués comme lu une fois que la série a été ajouté aux séries de l'utilisateur,
 cette action est réalisable grâce à un bouton "Marquer comme vu"
-[alt text](http://i.imgur.com/0GkkBC9.jpg)
+![alt text](http://i.imgur.com/0GkkBC9.jpg)
 
   - En tant qu'internaute (anonyme)
   Je peux visualiser en page d'accueil 2 à 4 séries
