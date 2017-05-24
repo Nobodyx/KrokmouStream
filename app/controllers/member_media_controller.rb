@@ -19,11 +19,6 @@ class MemberMediaController < ApplicationController
         redirect_to member_media_path
     end
     
-    #def update(id,season_number,episode_number)
-        #MemberMedia.update(id, :current_season => season_number, :current_episode => episode_number)
-        #redirect_to member_media_path
-    #end
-    
     def update
         MemberMedia.update(params[:id],member_medium_params)
         redirect_to member_medium_path
@@ -31,5 +26,10 @@ class MemberMediaController < ApplicationController
     
     def member_medium_params
         params.require(:member_media).permit(:current_season, :current_episode)
+    end
+    
+    def destroy
+        MemberMedia.delete(params[:id])
+        redirect_to member_media_path
     end
 end

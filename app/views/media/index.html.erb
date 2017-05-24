@@ -5,16 +5,16 @@
 
 <div class="container encadrement-media">
     <% if ! user_signed_in? %>
-        <% nb_media = @media.all.count 
+        <% nb_media = @media.all.count
         if nb_media > 4 %>
-            <%- @media.each_with_index do |medium, pos| next if pos > 3 -%>   
+            <%- @media.each_with_index do |medium, pos| next if pos > 3 -%>
                 <div class="col-sm-6 col-md-3 encadrement-medium">            
                     <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), medium_path(medium)) %>
                 </div>
             <% end %>
         <% else %>
-            <%- @media.each do |medium| -%>   
-                <div class="col-sm-6 col-md-3 encadrement-medium">            
+            <%- @media.each do |medium| -%>
+                <div class="col-sm-6 col-md-3 encadrement-medium">
                     <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), medium_path(medium)) %>
                 </div>
             <% end %>
@@ -67,12 +67,7 @@
                             
                     </div>
                 </div>
-
-        <%- @media.each do |medium| -%>   
-            <div class="col-sm-6 col-md-3 encadrement-medium">            
-                <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), medium_path(medium)) %>
-            </div>
-        <% end %>
+        
     <% end %>
 </div>
 

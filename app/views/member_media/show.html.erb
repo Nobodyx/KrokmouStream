@@ -3,9 +3,14 @@
     <%= icon("list") %> Retour à mes series
   <% end %>
 </p>
+
+<p class="text-left btn btn-default">
+    <%= link_to 'Supprimer de mes series', @member_medium, :method => 'delete' %>
+</p>
+
 <div class="media">
     <div class="col-sm-6 col-md-3 encadrement-medium-perso">
-        <h2 class="text-center"><%= @medium.title %></h2>
+        <h2 class="text-center color-black"><%= @medium.title %></h2>
         <%= cl_image_tag(@medium.photo.path, class: "picture") %>
     </div>
     <h2 class="text-center">Saison en cours de visualisation : <%= @member_medium.current_season %></h2> 

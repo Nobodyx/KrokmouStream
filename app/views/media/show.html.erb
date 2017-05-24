@@ -1,4 +1,4 @@
-<%= render partial: "media/button_index" %>
+<%= render partial: "shared/button_index" %>
 <% if user_signed_in?%>
     <% if @member_medium.nil?%>
         <%= render partial: "media/button_save_medium" %>
@@ -8,20 +8,20 @@
         <% end %>
     <% end %>
 <% end %>
-<div class="media">
+<div class="medium">
   <h1><%= @medium.title %></h1>
-  <div class="row medium">
+  <div class="row">
     <div class="col-sm-4">
       <%= cl_image_tag(@medium.photo.path,crop: :fill, class: "picture_fullscreen") %>
     </div>
     <div class="col-sm-8">
-      <p>Type: <%= @medium.style %></p>
-        <p>Style: <%= @medium.genre %></p>
-        <p>Nombre de saison: <%= @medium.nb_season %>
+      <p><u>Type:</u> <%= @medium.style %></p>
+        <p><u>Style:</u> <%= @medium.genre %></p>
+        <p><u>Nombre de saison:</u> <%= @medium.nb_season %>
             <button id="info_season" class="btn btn-default" style="margin-left:5px">Voir les épisodes</button>
         </p>
-        <p>Créateur: <%= @medium.director %></p>
-        <p>Synopsis: <%=@medium.description%></p>
+        <p><u>Créateur:</u> <%= @medium.director %></p>
+        <p><u>Synopsis:</u> <%=@medium.description%></p>
     </div>
   </div>
 </div>
@@ -32,8 +32,8 @@
         <% if season.title_media == @medium.title %>
           <div class="col-sm-12 text-center Season color-red">
             Saison <%= season.season_number %>
-            <p class="color-white">Date de Sortie: <%= season.date %></p>
-            <p class="color-white">Nombre d'épisode: <%= season.nb_episode %></p>
+            <p class="color-white"><u>Date de Sortie:</u> <%= season.date %></p>
+            <p class="color-white"><u>Nombre d'épisode:</u> <%= season.nb_episode %></p>
             <ul class="Episodes text-left col-md-12 color-white">
                 <% episodes = Episode.all %>
                 <%- episodes.each do |episode| -%>
@@ -41,7 +41,7 @@
                       <div class="Episode col-md-2">
                         <h3>Episode <%= episode.episode_number%></h3>
                         <h4><%= episode.title_episode %></h4>
-                        <p>Sortie le : <%= episode.date%></p>
+                        <p><u>Sortie le :</u> <%= episode.date%></p>
                       </div>
                     <% end %>
                 <% end %>
