@@ -4,6 +4,9 @@ KrokmouStream est une application Rails permettant le suivi de séries télévis
 
 Le projet est mené par une équipe de développeur d'Ingésup B3 au sein d'Ynov Campus Aix
 
+![alt text](http://i.imgur.com/VgcJY0x.jpg)
+
+
 L'application permet les User Stories suivantes :
 
   - En tant que fan de séries,
