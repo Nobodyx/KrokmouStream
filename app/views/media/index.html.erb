@@ -42,8 +42,11 @@
                                                 
 
                                                 <div class='item <%= "active" if medium == @media.first %>'> 
-                                                  <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), member_medium_path(member_medium)) %>
-
+                                                    <%= link_to(cl_image_tag(medium.photo.path, class: "picture"), member_medium_path(member_medium)) %>
+                                                    <% if member_medium.current_episode != 0 %>
+                                                        <p> Saison en cours : <%= member_medium.current_season %> </p>
+                                                        <p> Episode en cours : <%= member_medium.current_episode %> </p>
+                                                    <% end %>
                                                 </div>
                                                   
 
