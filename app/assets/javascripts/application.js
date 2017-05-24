@@ -17,11 +17,14 @@
 //= require jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-//= require_tree .
 //= require bootstrap-sprockets
+//= require_tree .
+
 
 
 $(document).ready(function(){
+    $('.carousel').carousel()
+    
     $('#Seasons').hide();
     $( "#info_season" ).hover(
       function() {
