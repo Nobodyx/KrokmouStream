@@ -46,7 +46,7 @@ cette action est réalisable grâce à un bouton "Marquer comme vu" :
 Une fois arrivé sur la page, un internaute peut voir une liste de séries et peut cliquer dessus 
 pour avoir plus d'informations dessus :
 
-[Imgur](http://i.imgur.com/TXmpKZ0.jpg)
+![alt text](http://i.imgur.com/TXmpKZ0.jpg)
 
   - En tant que membre du site
   Je peux consulter sur la page d'accueil du site les prochains épisodes
