@@ -49,7 +49,7 @@ Blabla
   
 Sur la page d'accueil, un carousel défilant affiche les séries suivie pa l'utilisateur connecté
 ainsi que les saisons et épisodes vus.
-http://imgur.com/42mOdt1
+![alt text](http://i.imgur.com/42mOdt1.jpg)
   
 User story bonus :
 
