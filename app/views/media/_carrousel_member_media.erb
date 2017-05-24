@@ -8,7 +8,7 @@
                         <% unless member_medium.current_episode == 0 %>
                             <div class="text-center color-carrousel">
                                 <p> Saison en cours : <%= member_medium.current_season %> </p>
-                                <p> Episode en cours : <%= member_medium.current_episode %> </p>
+                                <p> Prochaine épisode: <%= member_medium.current_episode+1 %> </p>
                             </div>
                         <% else %>
                             <div class="text-center color-carrousel">
