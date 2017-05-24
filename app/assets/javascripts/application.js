@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery2
 //= require jquery_ujs
 //= require jquery.ui.widget
 //= require jquery.iframe-transport
@@ -18,12 +18,13 @@
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
 //= require bootstrap-sprockets
+//= require owl.carousel
 //= require_tree .
 
 
 
 $(document).ready(function(){
-    $('.carousel').carousel()
+    $(".owl-carousel").owlCarousel({items: 3});
     
     $('#Seasons').hide();
     $( "#info_season" ).hover(
