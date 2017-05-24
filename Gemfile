@@ -40,7 +40,7 @@ gem 'devise-i18n'
 # Central point to collect locale data for use in Ruby on Rails.
 gem 'rails-i18n'
 
-gem 'parallax-rails'
+gem 'parallax-rails', '~> 1.0'
 
 group :development do
   gem 'binding_of_caller'
