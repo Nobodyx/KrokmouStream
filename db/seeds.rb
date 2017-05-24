@@ -14,16 +14,43 @@ def open_photo(name)
 end
 
 # Création de media en attente de l'exportation du csv
-m1 = Medium.create!(title: "Brice de nice",
-style: "FILM",
-genre: "Comédie",
-nb_season: 0,
-director: "James Huth",
-description: "Eternel ado de presque trente ans, délaissé par son père affairiste et une mère absente, Brice s'est réfugié dans une posture, un genre avec lesquels il exprime son être essentiel, son véritable vécu intrinsèque. Il est devenu un surfeur, winner, ascendant snowboarder.
-Comme Bodhi, le personnage de Patrick Swayze dans Point break, Brice attend la vague, SA vague... à Nice !
-Personne pourtant ne se risque à se moquer de Brice : redoutable bretteur du langage, Brice s'est fait une spécialité de casser tout et tout le monde par le truchement de ses réparties verbales. Car Brice de Nice le surfeur est également un grand casseur.
-Il fallait bien qu'un jour Brice soit rattrapé par la réalité... ",
-photo: open_photo("BriceDeNice.jpg"))
+m1 = Medium.create!(title: "American gods",
+style: "SERIE",
+genre: "Fantastique",
+nb_season: 1,
+director: "Michael Green",
+description: "Fraîchement sorti de prison, Ombre est embauché par le mystérieux Voyageur. L'homme se révélera comme le dieu Odin, en quête des autres divinités oubliées. ",
+photo: open_photo("american_gods.png"))
+
+    s1_1 = Season.create!(medium_id: m1.id,
+        title_media: m1.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e1_1 = Episode.create!(season_id: s1_1.season_number,
+            medium_id: m1.id,
+            season_number:s1_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e1_1 = Episode.create!(season_id: s1_1.season_number,
+            medium_id: m1.id,
+            season_number:s1_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e1_1 = Episode.create!(season_id: s1_1.season_number,
+            medium_id: m1.id,
+            season_number:s1_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
 
 m2 = Medium.create!(title: "L'Arme fatale",
 style: "SERIE",
@@ -33,6 +60,36 @@ director: "Matthew Miller",
 description: "Veuf depuis la mort tragique de son épouse enceinte, Martin Riggs, flic texan et ancien de la Marine, prend un nouveau départ à Los Angeles. Il devient le co-équipier du détective Roger Murtaugh, lequel a récemment subi une crise cardiaque 'bénigne' et doit à tout prix éviter les situations de stress. Un duo de choc qui risque de faire des étincelles. Entre l'un prudent et l'autre trop imprévisible, l'association provoque quelques étincelles...",
 photo: open_photo("armefatale.jpg"))
 
+    s2_1 = Season.create!(medium_id: m2.id,
+        title_media: m2.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e2_1 = Episode.create!(season_id: s2_1.season_number,
+            medium_id: m2.id,
+            season_number:s2_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e2_1 = Episode.create!(season_id: s2_1.season_number,
+            medium_id: m2.id,
+            season_number:s2_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e2_1 = Episode.create!(season_id: s2_1.season_number,
+            medium_id: m2.id,
+            season_number:s2_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
 m3 = Medium.create!(title: "13 Reasons Why",
 style: "SERIE",
 genre: "DRAME",
@@ -41,6 +98,37 @@ director: "Carl Franklin",
 description: "Inspirée des best-sellers de Jay Asher, 13 Reasons Why suit Clay Jensen, un adolescent qui découvre sous son porche au retour du lycée une mystérieuse boîte portant son nom. À l'intérieur, des cassettes enregistrées par Hannah Baker, une camarade de classe qui s'est tragiquement suicidée deux semaines auparavant. Les enregistrements révèlent que la jeune fille, dont il était amoureux, a décidé de mettre fin à ses jours pour treize raisons. Clay est-il l'une de ces raisons ?",
 photo: open_photo("13reasonwhy.jpg"))
 
+    s3_1 = Season.create!(medium_id: m3.id,
+        title_media: m3.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e3_1 = Episode.create!(season_id: s3_1.season_number,
+            medium_id: m3.id,
+            season_number:s3_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e3_1 = Episode.create!(season_id: s3_1.season_number,
+            medium_id: m3.id,
+            season_number:s3_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e3_1 = Episode.create!(season_id: s3_1.season_number,
+            medium_id: m3.id,
+            season_number:s3_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+
 m4 = Medium.create!(title: "Prison Break",
 style: "SERIE",
 genre: "Thriller",
@@ -48,6 +136,37 @@ nb_season: 5,
 director: "Nelson McCormick",
 description: "Michael Scofield s'engage dans une véritable lutte contre la montre : son frère Lincoln est dans le couloir de la mort, en attente de son exécution. Persuadé de son innocence mais à court de solutions, Michael décide de se faire incarcérer à son tour dans le pénitencier d'état de Fox River pour organiser leur évasion... ",
 photo: open_photo("prisonbreak.jpg"))
+
+    s4_1 = Season.create!(medium_id: m4.id,
+        title_media: m4.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e4_1 = Episode.create!(season_id: s4_1.season_number,
+            medium_id: m4.id,
+            season_number:s4_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e4_1 = Episode.create!(season_id: s4_1.season_number,
+            medium_id: m4.id,
+            season_number:s4_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e4_1 = Episode.create!(season_id: s4_1.season_number,
+            medium_id: m4.id,
+            season_number:s4_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
 
 m5 = Medium.create!(title: "One Piece",
 style: "ANIME",
@@ -73,6 +192,75 @@ director: "David Benioff",
 description: "Il y a très longtemps, à une époque oubliée, une force a détruit l'équilibre des saisons. Dans un pays où l'été peut durer plusieurs années et l'hiver toute une vie, des forces sinistres et surnaturelles se pressent aux portes du Royaume des Sept Couronnes. La confrérie de la Garde de Nuit, protégeant le Royaume de toute créature pouvant provenir d'au-delà du Mur protecteur, n'a plus les ressources nécessaires pour assurer la sécurité de tous. Après un été de dix années, un hiver rigoureux s'abat sur le Royaume avec la promesse d'un avenir des plus sombres. Pendant ce temps, complots et rivalités se jouent sur le continent pour s'emparer du Trône de Fer, le symbole du pouvoir absolu.",
 photo: open_photo("GOT.jpg"))
 
+    s7_1 = Season.create!(medium_id: m7.id,
+        title_media: m7.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e7_1 = Episode.create!(season_id: s7_1.season_number,
+            medium_id: m7.id,
+            season_number:s7_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e7_1 = Episode.create!(season_id: s7_1.season_number,
+            medium_id: m7.id,
+            season_number:s7_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e7_1 = Episode.create!(season_id: s7_1.season_number,
+            medium_id: m7.id,
+            season_number:s7_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+
+m7 = Medium.create!(title: "The walking dead",
+style: "SERIE",
+genre: "Drame, Thriller, Epouvante-horreur",
+nb_season: 7,
+director: "Frank darabont",
+description: "Rick Grimes cherche sa femme et son fils après s'être réveillé d'un long coma. Il découvre alors un monde désolé, ravagé par une terrible épidémie.",
+photo: open_photo("walking_dead.png"))
+
+    s7_1 = Season.create!(medium_id: m7.id,
+        title_media: m7.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e7_1 = Episode.create!(season_id: s7_1.season_number,
+            medium_id: m7.id,
+            season_number:s7_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e7_1 = Episode.create!(season_id: s7_1.season_number,
+            medium_id: m7.id,
+            season_number:s7_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e7_1 = Episode.create!(season_id: s7_1.season_number,
+            medium_id: m7.id,
+            season_number:s7_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
 m8 = Medium.create!(title: "Grey's Anatomy",
 style: "SERIE",
 genre: "Drame, Médical",
@@ -81,15 +269,73 @@ director: "Shonda Rhimes",
 description: "Meredith Grey, fille d'un chirurgien très réputé, commence son internat de première année en médecine chirurgicale dans un hôpital de Seattle. La jeune femme s'efforce de maintenir de bonnes relations avec ses camarades internes, mais dans ce métier difficile la compétition fait rage...",
 photo: open_photo("greyanatomy.jpg"))
 
-m9 = Medium.create!(title: "Source Code",
-style: "FILM",
-genre: " Science fiction, Action, Thriller",
-nb_season: 0,
-director: "Duncan Jones",
-description: "Colter Stevens se réveille en sursaut dans un train à destination de Chicago. Amnésique, il n’a aucun souvenir d’être monté dedans. Pire encore, les passagers du train se comportent avec lui avec familiarité alors qu’il ne les a jamais vus. Désorienté, il cherche à comprendre ce qui se passe mais une bombe explose tuant tout le monde à bord.
-Colter se réveille alors dans un caisson étrange et découvre qu’il participe à un procédé expérimental permettant de se projeter dans le corps d’une personne et de revivre les 8 dernières minutes de sa vie. Sa mission : revivre sans cesse les quelques minutes précédant l’explosion afin d’identifier et d’arrêter les auteurs de l’attentat. A chaque échec, les chances de pouvoir revenir dans le passé s’amenuisent.
-Alors qu’il essaie d’empêcher l’explosion, ses supérieurs lui apprennent qu’un deuxième attentat est en préparation en plein cœur de Chicago et qu’il ne s’agit plus de protéger les quelques passagers du train mais la ville toute entière. La course contre la montre commence… ",
-photo: open_photo("sourcecode.jpg"))
+    s8_1 = Season.create!(medium_id: m8.id,
+        title_media: m8.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e8_1 = Episode.create!(season_id: s8_1.season_number,
+            medium_id: m8.id,
+            season_number:s8_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e8_1 = Episode.create!(season_id: s8_1.season_number,
+            medium_id: m8.id,
+            season_number:s8_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e8_1 = Episode.create!(season_id: s8_1.season_number,
+            medium_id: m8.id,
+            season_number:s8_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+m9 = Medium.create!(title: "Legion",
+style: "SERIE",
+genre: "Drame, Action",
+nb_season: 1,
+director: "Noah Hawley",
+description: "L'histoire de David Haller, le fils schizophrène du professeur Xavier, un homme sujet depuis l'adolescence à une maladie mentale. Au cours d'un de ses nombreux séjours en hôpital psychiatrique, une étrange rencontre avec un patient lui fait réaliser que les voix qu'il entend et les visions auxquelles il est confronté pourraient se révéler vraies. ",
+photo: open_photo("legion.png"))
+
+    s9_1 = Season.create!(medium_id: m9.id,
+        title_media: m9.title,
+        season_number: 1,
+        date: DateTime.new(2014,3,19),
+        nb_episode: 3)
+
+        e9_1 = Episode.create!(season_id: s9_1.season_number,
+            medium_id: m9.id,
+            season_number:s9_1.season_number,
+            title_episode: "Titre 1",
+            episode_number: 1,
+            date: DateTime.new(2014,3,19),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e9_1 = Episode.create!(season_id: s9_1.season_number,
+            medium_id: m9.id,
+            season_number:s9_1.season_number,
+            title_episode: "Titre 2",
+            episode_number: 2,
+            date: DateTime.new(2014,3,20),
+            description: "knlibapizeubrpzaubpzaiubrpz")
+
+        e9_1 = Episode.create!(season_id: s9_1.season_number,
+            medium_id: m9.id,
+            season_number:s9_1.season_number,
+            title_episode: "Titre 3",
+            episode_number: 3,
+            date: DateTime.new(2014,3,21),
+            description: "knlibapizeubrpzaubpzaiubrpz")
 
 m10 = Medium.create!(title: "The 100",
 style: "SERIE",
