@@ -33,8 +33,9 @@ Blabla
   Je peux "marquer comme lu" un épisode d'une série
   Afin que le site mémorise pour moi cette information.
 
-Les saisons et épisodes peuvent être marqués comme lu une fois que la série a été ajouté aux séries de l'utilisateur,
-cette action est réalisable grâce à un bouton "Marquer comme vu"
+Les saisons et épisodes peuvent être marqués comme vu une fois que la série a été ajouté aux séries de l'utilisateur,
+cette action est réalisable grâce à un bouton "Marquer comme vu" : 
+
 ![alt text](http://i.imgur.com/0GkkBC9.jpg)
 
   - En tant qu'internaute (anonyme)
@@ -50,7 +51,8 @@ Blabla
   Afin de ne rater aucun épisode.
   
 Sur la page d'accueil, un carousel défilant affiche les séries suivie par l'utilisateur connecté
-ainsi que les saisons et épisodes vus.
+ainsi que les saisons et épisodes vus :
+
 ![alt text](http://i.imgur.com/42mOdt1.jpg)
   
 User story bonus :
