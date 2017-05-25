@@ -1,17 +1,12 @@
-# README
+# KrokmouStream
 
-<b> KrokmouStream est une application Rails permettant le suivi de séries télévisées, inspiré de BetaSeries </b>
+![alt text](http://i.imgur.com/PWkZnp3.png)
 
-<b> Le projet est mené par une équipe de développeur d'Ingésup B3 au sein d'Ynov Campus Aix </b>
+KrokmouStream est une application Rails permettant le suivi de séries télévisées, inspiré de BetaSeries.
 
-@Nobodyx
-@Aleqsd
-@louis030195
+Le projet est mené par une équipe de développeur d'Ingésup B3 au sein d'Ynov Campus Aix.
 
-![alt text](http://i.imgur.com/9IvBPfi.png)
-
-
-L'application permet les User Stories suivantes :
+## L'application permet les User Stories suivantes :
 
   - <i>En tant qu'internaute (anonyme)
   Je peux visualiser en page d'accueil 2 à 4 séries
@@ -19,11 +14,11 @@ L'application permet les User Stories suivantes :
   Afin de découvrir de nouvelles séries.</i>
 
 Une fois arrivé sur la page, un internaute anonyme peut voir une liste de 2 à 4 séries et peut cliquer dessus
-pour avoir plus d'informations dessus :
+pour avoir plus d'informations :
 
 ![alt text](http://i.imgur.com/VgcJY0x.png)
 
-Si jamais c'est un utilisateur authentifier alors il aura accès à bien plus de série :
+Si jamais c'est un utilisateur authentifié alors il aura accès à bien plus de série :
 
 ![alt text](http://i.imgur.com/TXmpKZ0.jpg)
 
@@ -32,7 +27,7 @@ Si jamais c'est un utilisateur authentifier alors il aura accès à bien plus de
     organisée saison par saison (sous la forme saison x episode: 3x04)
   Afin de connaître leurs titres et dates de diffusion </i>
 
-Il est possible qu'un utilisateur anonyme ai accès au détails d'une série pour avoir des informations basique sur la série ainsi que le saisons et épisode de celle-ci. Pour cela il lui suffit simplement de cliquer sur une série ainsi que voir les épisodes puis les saisons.
+Il est possible qu'un utilisateur anonyme ait accès aux détails d'une série pour avoir des informations basique ainsi que les saisons et épisodes de celle-ci. Pour cela il lui suffit simplement de cliquer sur une série et voir les épisodes puis les saisons.
 
 ![alt text](http://i.imgur.com/CkCoKf5.jpg)
 
@@ -40,7 +35,7 @@ Il est possible qu'un utilisateur anonyme ai accès au détails d'une série pou
   Je peux m'inscrire sur le site
   Afin de profiter des fonctionnalités du site.</i>
 
-Pour cette user story nous avons mis en place l'utilisation de la gem DEVISE, qui nous permet de gérer plus facilement nos Users avec formulaire d'inscription, de connexion ainsi que de modification de compte. La base "user" de DEVISE sera adapter à l'ensemble de notre base de données.
+Pour cette user story nous avons mis en place l'utilisation de la gem Devise, qui nous permet de gérer plus facilement nos Users avec formulaire d'inscription, de connexion ainsi que de modification de compte. La base "user" de DEVISE sera adaptée à l'ensemble de notre base de données.
 
 ![alt text](http://i.imgur.com/Koh1ehv.png)
 
@@ -49,7 +44,7 @@ Pour cette user story nous avons mis en place l'utilisation de la gem DEVISE, qu
     (sélectionnée dans une liste / un auto-complete)
   Afin d'enregistrer quels épisodes j'ai déjà visionnés.</i>
 
-Sur la page d'accueil il est possible d'avoir un visuel en liste d'image des séries de KrokmouStream. Lorsque l'on accède aux informations d'une série pour avoir plus de détails sur celle-ci, si l'on est connecté, on pourra observé la présence d'un bouton "Ajouter à mes séries".
+Sur la page d'accueil il est possible d'avoir un visuel en liste d'image des séries de KrokmouStream. Lorsque l'on accède aux informations d'une série pour avoir plus de détails sur celle-ci, si l'User est connecté, on pourra observer la présence d'un bouton "Ajouter à mes séries".
 Ce qui créera automatiquement l'ajout d'une série pour l'utilisateur afin de gérer ses épisodes.
 
 ![alt text](http://i.imgur.com/teLHxGd.jpg)
@@ -58,7 +53,7 @@ Ce qui créera automatiquement l'ajout d'une série pour l'utilisateur afin de g
   Je peux "marquer comme lu" un épisode d'une série
   Afin que le site mémorise pour moi cette information.</i>
 
-Les saisons et épisodes peuvent être marqués comme vu une fois que la série a été ajouté aux séries de l'utilisateur,
+Les saisons et épisodes peuvent être marquées comme vu une fois que la série a été ajoutée aux séries de l'utilisateur,
 cette action est réalisable grâce à un bouton "Marquer comme vu" :
 
 ![alt text](http://i.imgur.com/0GkkBC9.jpg)
@@ -68,12 +63,12 @@ cette action est réalisable grâce à un bouton "Marquer comme vu" :
     à voir pour chaque série que j'ai enregistrée sur le site
   Afin de ne rater aucun épisode.</i>
 
-Sur la page d'accueil, un carousel défilant affiche les séries suivie par l'utilisateur connecté
+Sur la page d'accueil, un Carousel défilant affiche les séries suivies par l'utilisateur connecté
 ainsi que les saisons et épisodes vus :
 
 ![alt text](http://i.imgur.com/PrBk7AE.jpg)
 
-User story bonus :
+## User story bonus :
 
   - <i>En tant qu'internaute anonyme,
   Via l'API, je peux lister toutes les séries disponibles sur le site,
