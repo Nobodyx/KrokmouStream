@@ -14,6 +14,7 @@ class ApiV1::MemberMediaController < ApplicationController
 
   def update
       MemberMedia.update(params[:id],member_medium_params)
+      render :show, status: :updated
   end
 
   def member_medium_params
