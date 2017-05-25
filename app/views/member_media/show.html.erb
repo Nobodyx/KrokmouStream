@@ -13,8 +13,8 @@
         <h2 class="text-center color-black"><%= @medium.title %></h2>
         <%= cl_image_tag(@medium.photo.path, class: "picture") %>
     </div>
-    <h2 class="text-center">Saison en cours de visualisation : <%= @member_medium.current_season %></h2> 
-    <div class="col-md-8 text-center" style="font-size:28px;">               
+    <h2 class="text-center">Saison en cours de visualisation : <%= @member_medium.current_season %></h2>
+    <div class="col-md-8 text-center" style="font-size:28px;">
         <p>Dernier Episode vu : <%= @member_medium.current_episode %></p>
     </div>
 </div>

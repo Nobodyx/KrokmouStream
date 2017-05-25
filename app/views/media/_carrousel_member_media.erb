@@ -1,6 +1,6 @@
 <div class="owl-carousel">
   <%- @member_media.each do |member_medium| -%>
-    <% if member_medium.user_id == current_user.id %>                         
+    <% if member_medium.user_id == current_user.id %>
         <%- @media.each do |medium| -%>
                 <% if medium.id == member_medium.medium_id && medium.style == "SERIE" %>
                     <div>

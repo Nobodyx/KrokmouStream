@@ -11,7 +11,7 @@
  * It is generally better to create a new file per style scope.
  *= require owl.carousel2
  *= require_tree .
- *= require_self 
+ *= require_self
  */
 
 @import "bootstrap-sprockets";
@@ -69,14 +69,14 @@ body{
 .media, #Seasons_member .Season{
     border-style: solid;
     border-color: black;
-    border-radius: 10px;    
+    border-radius: 10px;
     background-color: rgba(11, 160, 255, 0.51);
     color: white;
     margin-bottom: 10px;
 }
 
 .media h1{
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -84,7 +84,7 @@ body{
     background-color: rgba(255, 255, 255, 0.87);
     border-style: solid;
     border-color: black;
-    border-radius: 10px;  
+    border-radius: 10px;
     justify-content: space-around;
     font-size: 16px;
     padding: 10px;
@@ -137,7 +137,7 @@ body{
     padding: 5px;
     border-style: solid;
     border-color: black;
-    border-radius: 10px;    
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.87);
     color: black;
     margin-bottom: 10px;
@@ -153,7 +153,7 @@ body{
     background-color: rgba(255, 255, 255, 0.87);
     border-style: solid;
     border-color: black;
-    border-radius: 10px; 
+    border-radius: 10px;
     margin-top: 3px;
 }
 

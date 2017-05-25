@@ -1,3 +1,7 @@
+# On va chercher le member_media à l'id donné dans la requête,
+# si l'id de l'utilisateur connecté est bien celui du member_media,
+# on affiche le résultat ainsi que tous les media et leurs infos
+
 json.member_media(@member_media) do |member_medium|
   if member_medium.user_id == current_user.id
     json.user_id member_medium.user_id

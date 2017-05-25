@@ -14,7 +14,7 @@ L'application permet les User Stories suivantes :
     mises en avant sur le site (avec une image par exemple)
   Afin de découvrir de nouvelles séries.
 
-Une fois arrivé sur la page, un internaute anonyme peut voir une liste de 2 à 4 séries et peut cliquer dessus 
+Une fois arrivé sur la page, un internaute anonyme peut voir une liste de 2 à 4 séries et peut cliquer dessus
 pour avoir plus d'informations dessus :
 
 ![alt text](http://i.imgur.com/VgcJY0x.png)
@@ -55,7 +55,7 @@ Ce qui créera automatiquement l'ajout d'une série pour l'utilisateur afin de g
   Afin que le site mémorise pour moi cette information.
 
 Les saisons et épisodes peuvent être marqués comme vu une fois que la série a été ajouté aux séries de l'utilisateur,
-cette action est réalisable grâce à un bouton "Marquer comme vu" : 
+cette action est réalisable grâce à un bouton "Marquer comme vu" :
 
 ![alt text](http://i.imgur.com/0GkkBC9.jpg)
 
@@ -63,12 +63,12 @@ cette action est réalisable grâce à un bouton "Marquer comme vu" :
   Je peux consulter sur la page d'accueil du site les prochains épisodes
     à voir pour chaque série que j'ai enregistrée sur le site
   Afin de ne rater aucun épisode.
-  
+
 Sur la page d'accueil, un carousel défilant affiche les séries suivie par l'utilisateur connecté
 ainsi que les saisons et épisodes vus :
 
 ![alt text](http://i.imgur.com/PrBk7AE.jpg)
-  
+
 User story bonus :
 
   - En tant qu'internaute anonyme,
@@ -83,7 +83,7 @@ http://krokmoustream.herokuapp.com/media.json
   - En tant que membre du site,
   Je peux récupérer un token
   Afin d'utiliser l'API pour agir sur mon compte.
-  
+
 Chaque User créée a un token d'authentification accéssible sur sa page de profil
 
 ![alt text](http://i.imgur.com/9vcm16D.png)
@@ -101,7 +101,7 @@ http://krokmoustream.herokuapp.com/member_media.json
   - En tant que membre du site,
   Via l'API, pour une série donnée, je peux afficher la liste des épisodes vus et restant à voir
   Afin de suivre où j'en suis dans la série.
-  
+
 Chaque membre du site, une fois authentifié, peut accéder à la série qu'il suit et voir sa progression en donnant l'id de la série par l'URL :
 
 http://krokmoustream.herokuapp.com/member_media/9.json (ici l'id est 9 pour Game of Thrones)
@@ -111,4 +111,3 @@ http://krokmoustream.herokuapp.com/member_media/9.json (ici l'id est 9 pour Game
   - En tant que membre du site,
   Via l'API, je peux "marquer comme lu" un épisode d'une série
   Afin que le site mémorise pour moi cette information.
-  

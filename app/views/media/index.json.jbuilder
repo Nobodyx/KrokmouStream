@@ -1,3 +1,5 @@
+# Renvoi tous les medium issue de la variable media
+
 json.media(@media) do |medium|
   json.id medium.id
   json.title medium.title
