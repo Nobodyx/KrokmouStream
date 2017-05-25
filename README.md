@@ -74,29 +74,41 @@ User story bonus :
   - En tant qu'internaute anonyme,
   Via l'API, je peux lister toutes les séries disponibles sur le site,
   Afin de connaître leurs IDs et d'interagir avec elles.
-  
-Blabla
+
+L'API propose à n'importe quel internaute, anonyme ou connecté, de lister toutes les séries sur le site par l'URL :
+http://krokmoustream.herokuapp.com/media.json
+
+![alt text](http://i.imgur.com/DR99nt2.png)
 
   - En tant que membre du site,
   Je peux récupérer un token
   Afin d'utiliser l'API pour agir sur mon compte.
   
-Blabla
+Chaque User créée a un token d'authentification accéssible sur sa page de profil
+
+![alt text](http://i.imgur.com/9vcm16D.png)
 
   - En tant que membre du site,
   Via l'API, je peux lister mes propres séries,
   Afin de connaître leurs IDs puis d'afficher des informations détaillées.
 
-Blabla
+Chaque membre du site, une fois authentifié, peut lister ses propres séries et récupérer ses informations ainsi que sa progression dans la série par l'URL :
+
+http://krokmoustream.herokuapp.com/member_media.json
+
+![alt text](http://i.imgur.com/kDysVw6.png)
 
   - En tant que membre du site,
   Via l'API, pour une série donnée, je peux afficher la liste des épisodes vus et restant à voir
   Afin de suivre où j'en suis dans la série.
   
-Blabla
+Chaque membre du site, une fois authentifié, peut accéder à la série qu'il suit et voir sa progression en donnant l'id de la série par l'URL :
+
+http://krokmoustream.herokuapp.com/member_media/9.json (ici l'id est 9 pour Game of Thrones)
+
+![alt text](http://i.imgur.com/WMhVWcO.png)
 
   - En tant que membre du site,
   Via l'API, je peux "marquer comme lu" un épisode d'une série
   Afin que le site mémorise pour moi cette information.
   
-Blabla
