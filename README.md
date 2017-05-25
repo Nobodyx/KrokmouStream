@@ -107,7 +107,3 @@ Chaque membre du site, une fois authentifié, peut accéder à la série qu'il s
 http://krokmoustream.herokuapp.com/member_media/9.json (ici l'id est 9 pour Game of Thrones)
 
 ![alt text](http://i.imgur.com/WMhVWcO.png)
-
-  - En tant que membre du site,
-  Via l'API, je peux "marquer comme lu" un épisode d'une série
-  Afin que le site mémorise pour moi cette information.
