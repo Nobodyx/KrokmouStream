@@ -1,8 +1,11 @@
 # README
 
-KrokmouStream est une application Rails permettant le suivi de séries télévisées, inspiré de BetaSeries
+** KrokmouStream est une application Rails permettant le suivi de séries télévisées, inspiré de BetaSeries **
 
-Le projet est mené par une équipe de développeur d'Ingésup B3 au sein d'Ynov Campus Aix
+** Le projet est mené par une équipe de développeur d'Ingésup B3 au sein d'Ynov Campus Aix **
+ - @Nobodyx
+ - @Aleqsd
+ - @louis030195
 
 ![alt text](http://i.imgur.com/9IvBPfi.png)
 
